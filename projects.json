@@ -1,0 +1,66 @@
+[
+{
+	"date": "20/02/2024",
+	"img": "imgs/projects/project1.jpeg",
+	"pl": {
+		"title": "HEHEHEHEHE Modelowanie ekosystemów",
+		"desc": "Nawet nie wiesz jak się ciesze, że miałem przyjemnosc modelowac ekosystemy ;););)"
+	},
+	"fr": {
+		"title": "Po francusku przyklad",
+		"desc": "Po francusku opis"
+	},
+	"eng": {
+		"title": "Exampleproject",
+		"desc": "Exampleproject descritption."
+	}
+},
+{
+	"date": "05/05/2024",
+	"img": "imgs/projects/asfas.jpg",
+	"pl": {
+		"title": "Tu wpisz tytuł drugiego projektu",
+		"desc": "Tu wpisz opis drugiego projektu. "
+	},
+	"fr": {
+		"title": "Title de seconde projet",
+		"desc": "La description de seconde projet. "
+	},
+	"eng": {
+		"title": "Example title of the second project. ",
+		"desc": "Example description of the second project."
+	}
+},
+{
+	"date": "20/02/2024",
+	"img": "",
+	"pl": {
+		"title": "Przykładowy projekt 2 ",
+		"desc": "Przykładowy opis projektu 2 "
+	},
+	"fr": {
+		"title": "Po francusku przyklad 2",
+		"desc": "Po francusku opis 2 fijdf ij oifjdo ijfoijd joij joi jjd jfoj ij oij ifjdoijfoi joij oij oijoifjdoijf ijid jfijdoifjoidjf "
+	},
+	"eng": {
+		"title": "Exampleproject 2 ",
+		"desc": "Exampleproject descritption. 2"
+	}
+},
+{
+	"date": "20/02/2024",
+	"img": "",
+	"pl": {
+		"title": "Przykładowy projekt 2 ",
+		"desc": "Przykładowy opis projektu 2 "
+	},
+	"fr": {
+		"title": "Po francusku przyklad 2",
+		"desc": "Po francusku opis 2 fijdf ij oifjdo ijfoijd joij joi jjd jfoj ij oij ifjdoijfoi joij oij oijoifjdoijf ijid jfijdoifjoidjf "
+	},
+	"eng": {
+		"title": "Exampleproject 2 ",
+		"desc": "Exampleproject descritption. 2"
+	}
+}
+]
