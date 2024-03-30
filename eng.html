@@ -1,218 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aleksandra Grzelik</title>
-    <meta name="desc" content="Aleksandra Grzelik - portfolio">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
-</head>
-<body onload="preloader()" onscroll="navbar()">
+  <head>
+    <!-- METADATA -->
+    <title>Aleksandra Grzelik - Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Aleksandra Grzelik - Portfolio" />
+    <meta name="author" content="Aleksandra Grzelik" />
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Aleksandra Grzelik - Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://agrzelik.github.io/" />
+    <meta property="og:description" content="Aleksandra Grzelik - Portfolio" />
+    <meta property="og:image" content="http://192.168.0.27:5500/imgs/mainbg.jpeg" />
+    <meta property="og:locale" content="en_EN" />
+    <!-- RESOURCES -->
+    <link rel="stylesheet" href="http://192.168.0.27:5500/css/main.css" />
+    <script src="https://kit.fontawesome.com/d7fb58415a.js" crossorigin="anonymous"></script>
+    <!-- ICONS -->
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <!-- CANNONICAL -->
+    <link rel="cannonical" href="https://agrzelik.github.io/" />
+  </head>
+  <body onload="preloader()" onscroll="navbar()">
     <div id="preloader">
-        <div id="preloader-polygon">
-            <div id="preloader-polygon-side-1"></div>
-            <div id="preloader-polygon-side-2"></div>
-            <div id="preloader-polygon-side-3"></div>
-            <div id="preloader-polygon-side-4"></div>
-            <div id="preloader-polygon-side-5"></div>
-            <div id="preloader-polygon-side-6"></div>
-        </div>
+      <div id="preloader-polygon">
+        <div id="preloader-polygon-side-1"></div>
+        <div id="preloader-polygon-side-2"></div>
+        <div id="preloader-polygon-side-3"></div>
+        <div id="preloader-polygon-side-4"></div>
+        <div id="preloader-polygon-side-5"></div>
+        <div id="preloader-polygon-side-6"></div>
+      </div>
     </div>
-
-    <div class="mainbg">
-        <img src="imgs/mainbg.jpeg">
-    </div>
-
     <div id="sideMenu">
-        <a href="#about-me" onclick="document.querySelector('.about-me').scrollIntoView();closeMenu()">About me</a>
-        <a href="projekty-eng.html" onclick="document.querySelector('.projects').scrollIntoView();closeMenu()">My Projects</a>
-        <a href="#contact" onclick="document.querySelector('.contact').scrollIntoView();closeMenu()">Contact</a>
+      <a href="http://192.168.0.27:5500/eng.html#about-me" onclick="document.querySelector('.about-me').scrollIntoView();closeMenu()">
+        About me
+      </a>
+      <a href="http://192.168.0.27:5500/eng/projects.html">
+        My Projects
+      </a>
+      <a href="http://192.168.0.27:5500/eng/blog.html">
+        Blog
+      </a>
+      <a href="http://192.168.0.27:5500/eng.html#contact" onclick="document.querySelector('.contact').scrollIntoView();closeMenu()">
+        Contact me
+      </a>
     </div>
-
     <nav id="navbar">
-        <div class="navbar-logo" onclick="location.href='eng.html'">
-            <h1>Aleksandra Grzelik</h1>
-            <p>Data science</p>
+      <div class="navbar-logo" onclick="location.href='/eng.html'">
+        <h1>
+          Aleksandra Grzelik
+        </h1>
+        <p>
+          Data science
+        </p>
+      </div>
+      <div id="navbar-logowrap">
+        <a href="http://192.168.0.27:5500/eng.html#about-me" onclick="document.querySelector('.about-me').scrollIntoView()">
+          About me
+        </a>
+        <a href="http://192.168.0.27:5500/eng/projects.html">
+          My Projects
+        </a>
+        <a href="http://192.168.0.27:5500/eng/blog.html">
+          Blog
+        </a>
+        <a href="http://192.168.0.27:5500/eng.html#contact" onclick="document.querySelector('.contact').scrollIntoView()">
+          Contact me
+        </a>
+        <div class="lang-icon" onclick="language()">
+          <p id="lang-icon-name">
+            English
+          </p>
+          <img src="http://192.168.0.27:5500/imgs/icons/eng.png" />
+          <p id="lang-arrow">
+            &#9660;
+          </p>
         </div>
-        <div id="navbar-logowrap">
-            <a href="#about-me" onclick="document.querySelector('.about-me').scrollIntoView()">About me</a>
-            <a href="/projekty-eng.html" onclick="document.querySelector('.projects').scrollIntoView()">My Projects</a>
-            <a href="#contact" onclick="document.querySelector('.contact').scrollIntoView()">Contact</a>
-            <div class="lang-icon" onclick="language()">
-                <p id="lang-icon-name">English</p>
-                <img src="imgs/eng.png">
-                <p id="lang-arrow">&#9660;</p>
-            </div>
-            <div class="mobileMenu" onclick="mobileMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="lang">
-                <div onclick="location.href='/'">
-                    <p>Polski</p>
-                    <img src="imgs/pl.png">
-                </div>
-                <div onclick="location.href='/fr.html'">
-                    <p>Fran&ccedil;ais</p>
-                    <img src="imgs/fr.png">
-                </div>
-            </div>
+        <div class="mobileMenu" onclick="mobileMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        
+        <div class="lang">
+          <div onclick="window.open('http://192.168.0.27:5500//', target='_self')">
+            <p>
+              Polski
+            </p>
+            <img src="http://192.168.0.27:5500/imgs/icons/pl.png" />
+          </div>
+          <div onclick="window.open('http://192.168.0.27:5500//fr.html', target='_self')">
+            <p>
+              Fran&ccedil;ais
+            </p>
+            <img src="http://192.168.0.27:5500/imgs/icons/fr.png" />
+          </div>
+        </div>
+      </div>
     </nav>
-
+    <div class="mainbg">
+      <img src="imgs/mainbg.jpg" />
+    </div>
     <div class="mainframe">
-        <div class="mainframe-content">
-            <h1>Welcome to my portfolio</h1>
-            <p>Scroll to check out my projects and education </p>
-        </div>
+      <div class="mainframe-content">
+        <h1>Welcome to my portfolio</h1>
+        <p>Scroll to check out my projects and blog</p>
+      </div>
     </div>
-
     <div class="about-me">
-        <div class="bio">
-            <div class="bio-photo"><img src="imgs/asfas.jpg"></div>
-            <div class="bio-content">
-                <h1>About me</h1>
-                <p>Jestem absolwentką studiów licencjackich na kierunku Ekonometria i Analityka
-                    Danych na Uniwersytecie Łódzkim. Podczas studiów zdobyłam wiedzę z zakresu
-                    analizy danych, matematyki, ekonomii i modelowania statystycznego. Obecnie
-                    studiuję Analizę Danych na Wydziale Matematyki i Informatyki Uniwersytetu
-                    Łódzkiego. Chciałabym wykorzystać swoje umiejętności w praktyce i nauczyć
-                    się więcej. Moim celem jest rozwój w dziedzinie analizy danych i programowania,
-                    interesuję się modelowaniem matematycznym i statystycznym zjawisk z wielu
-                    dziedzin, szczególnie psychologii, ekologii, socjologii. Tematem mojej pracy
-                    licencjackiej była statystyczna analiza szczęścia wśród studentów mojego kierunku</p>
-            </div>
+      <div class="bio">
+        <div class="bio-photo">
+          <img src="imgs/asfas.jpg" />
         </div>
-
-        <div class="exp">
-            <div class="exp-educ">
-                <h2>Education</h2>
-                <ul class="exp-tiles">
-                    <li>
-                        <img src="imgs/ul-eksoc.jpg">
-                        <span>
-                            <h3>Econometry and data analysis</h3>
-                            <small>Faculty of Economics and Sociology</small>
-                            <small>University of Lodz</small>
-                            <small>bachelor's degree</small>
-                            <p><i class="fa-regular fa-calendar"></i> 2019-2022</p>
-                        </span>
-                    </li>
-                    <li>
-                        <img src="imgs/ul-fil.png">
-                        <span>
-                            <h3>Roman philology</h3>
-                            <small>Faculty of Philology</small>
-                            <small>University of Lodz</small>
-                            <small>bachelor's degree</small>
-                            <p><i class="fa-regular fa-calendar"></i> 2019-2022</p>
-                        </span>
-                    </li>
-                    <li>
-                        <img src="imgs/ul-mi.png">
-                        <span>
-                            <h3>Data analysis</h3>
-                            <small>Faculty of Mathematics and Computer Science</small>
-                            <small>University of Lodz</small>
-                            <small>master's degree</small>
-                            <p><i class="fa-regular fa-calendar"></i> 2022 - present</p>
-                        </span>
-                    </li>
-                </ul>
-            </div>
-            <div class="exp-comp">
-                <h2>Competences</h2>
-                <ul class="comps">
-                    <li>zaplecze teoretyczne z zakresu statystyki, matematyki, finansów</li>
-                    <li>umiejętność przeprowadzania analiz statystycznych z wykorzystaniem
-                        oprogramowania: Statistica, PS IMAGO</li>
-                    <li>podstawowa znajomość języków programowania: Python, R, Java, PLSQL</li>
-                    <li>tworzenie modeli regresji i klasyfikacji, również z uwzględnieniem koncepcji
-                        uczenia maszynowego</li>
-                    <li>znajomość technik weryfikacji modeli i testów statystycznych</li>
-                    <li>umiejętność przyswojenia i redakcji tekstów naukowych</li>
-                    <li>myślenie analityczne, z miejscem na kreatywność</li>
-                </ul>
-            </div>
-            <div class="exp-job">
-                <h2>Experience</h2>
-                <ul class="exp-tiles">
-                    <li>
-                        <img src="imgs/asfas.png">
-                        <span>
-                            <h3>Internship</h3>
-                            <small>Participating in Google Ads optimization project</small>
-                            <small>Evillage.pl</small>
-                            <p><i class="fa-regular fa-calendar"></i> 2021 july - august</p>
-                        </span>
-                    </li>
-                    <li>
-                        <img src="imgs/acc.png">
-                        <span>
-                            <h3>Application Developement Associate </h3>
-                            <small>Accenture Poland</small>
-                            <p><i class="fa-regular fa-calendar"></i> september 2022 - present</p>
-                        </span>
-                    </li>
-                </ul>
-            </div>
-            <div class="exp-jezyki">
-                <h2>Languages</h2>
-                <ul class="langs">
-                    <li><img src="imgs/pl.png">  Polish - native language</li>
-                    <li><img src="imgs/eng.png">  Engilsh - C1 level</li>
-                    <li><img src="imgs/fr.png">  French - B2 level</li>
-                </ul>
-            </div>
+        <div class="bio-content">
+          <h1>About me</h1>
+          <p>HEhehee about me </p>
         </div>
-
-        <div class="bio">
-            <div class="bio-content" id="interests">
-                <h1>Interests</h1>
-                <p>Heheh ksiazki</p>
-            </div>
-            <div class="bio-photo"><img src="imgs/asfas.jpg"></div>
+      </div>
+      <div class="exp">
+        <div class="exp-educ">
+          <h2>Education</h2>
+          <ul class="exp-tiles">
+            <li>
+              <img src="imgs/icons/ul-eksoc.jpg" />
+              <span>
+                <h3>Econometrics and data analysis</h3>
+                <small>Faculty of Economics and Sociology</small>
+                <small>University of Lodz</small>
+                <small>bachelor's degree</small>
+                <p><i class="fa-regular fa-calendar"></i> 2019-2022</p>
+              </span>
+            </li>
+            <li>
+              <img src="imgs/icons/ul-fil.png" />
+              <span>
+                <h3>Roman philology</h3>
+                <small>Faculty of Philology</small>
+                <small>University of Lodz</small>
+                <small>bachelor's degree</small>
+                <p><i class="fa-regular fa-calendar"></i> 2019-2022</p>
+              </span>
+            </li>
+            <li>
+              <img src="imgs/icons/ul-mi.png" />
+              <span>
+                <h3>Data analysis</h3>
+                <small>Faculty of Mathematics and Computer Science</small>
+                <small>University of Lodz</small>
+                <small>master's degree</small>
+                <p><i class="fa-regular fa-calendar"></i> 2022 - obecnie</p>
+              </span>
+            </li>
+          </ul>
         </div>
-    </div>
-
-
-    <div class="projects">
-        <h1>My projects</h1>
-    </div>
-
-    <div class="contact">
-        <h1>Contact me</h1>
+        <div class="exp-comp">
+          <h2>Competences</h2>
+          <ul class="comps">
+            <li>zaplecze teoretyczne z zakresu statystyki, matematyki, finansów</li>
+            <li>umiejętność przeprowadzania analiz statystycznych z wykorzystaniem oprogramowania: Statistica, PS IMAGO</li>
+            <li>podstawowa znajomość języków programowania: Python, R, Java, PLSQL</li>
+            <li>tworzenie modeli regresji i klasyfikacji, również z uwzględnieniem koncepcji uczenia maszynowego</li>
+            <li>znajomość technik weryfikacji modeli i testów statystycznych</li>
+            <li>umiejętność przyswojenia i redakcji tekstów naukowych</li>
+            <li>myślenie analityczne, z miejscem na kreatywność</li>
+          </ul>
+        </div>
+        <div class="exp-job">
+          <h2>Experience</h2>
+          <ul class="exp-tiles">
+            <li>
+              <img src="imgs/asfas.png" />
+              <span>
+                <h3>Internship</h3>
+                <small>Participating in Google Ads optimization project</small>
+                <small>Evillage.pl</small>
+                <p><i class="fa-regular fa-calendar"></i> 2021 july - august</p>
+              </span>
+            </li>
+            <li>
+              <img src="imgs/icons/acc.png" />
+              <span>
+                <h3>Application Developement Associate </h3>
+                <small>Accenture Polska</small>
+                <p><i class="fa-regular fa-calendar"></i> september 2022 - present</p>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="exp-jezyki">
+          <h2>Languages</h2>
+          <ul class="langs">
+            <li>
+              <img src="imgs/icons/pl.png" />
+              <p>Polish - native language</p>
+            </li>
+            <li>
+              <img src="imgs/icons/eng.png" />
+              <p>English - C1 level</p>
+            </li>
+            <li>
+              <img src="imgs/icons/fr.png" />
+              <p>French - B2 level</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bio">
+        <div class="bio-content" id="interests">
+          <h1>Interests</h1>
+          <p>Heheh ksiazki</p>
+        </div>
+        <div class="bio-photo">
+          <img src="imgs/asfas.jpg" />
+        </div>
+      </div>
+      <section class="projectBlog">
+        <article>
+          <h1>Projects</h1>
+          <a class="project" href="eng/projects/examplaryproject1.html">
+            <img src="imgs/projects/project1.jpeg" />
+            <div>
+              <h3>Exampleproject</h3>
+              <small>20/02/2024</small>
+              <p>Nawet nie wiesz jak się ciesze, że miałem przyjemnosc modelowac ekosystemy ;););)</p>
+            </div>
+          </a>
+        </article>
+        <article>
+          <h1>Blog</h1>
+          <a class="project" href="eng/blog/exemplarypost2.html">
+            <img src="imgs/posts/asfas.png" />
+            <div>
+              <h3>Exemplary project number 2</h3>
+              <small>05/08/2024</small>
+              <p>This is an exemplary project number 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet imperdiet elit.</p>
+            </div>
+          </a>
+        </article>
+      </section>
+      <div class="contact">
+        <h1>Contact</h1>
         <div class="contact-wrap">
-            <div class="contact-wrap-left">
-                <div class="contact-info">
-                    <p><i class="fa-regular fa-envelope"></i> &nbsp;ola.grzelik.bno@gmail.com</p>
-                    </span>
-                </div>
-                <div class="contact-links">
-                    <span onclick="window.open('https://www.linkedin.com/in/aleksandra-grzelik-070291210?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app&fbclid=IwAR36g7HqOMaWRaIIc6dOUlOCUwKUVuVgH_zEZzSmF-seF1W-PBMWviSxEC0')">
-                        <img src="imgs/linkedin.png">
-                        <p>LinkedIn</p>
-                    </span>
-                </div>
+          <div class="contact-wrap-left">
+            <div class="contact-info">
+              <p>
+                <i class="fa-regular fa-envelope"></i>
+                &nbsp;ola.grzelik.bno@gmail.com
+              </p>
             </div>
-            <form>
-                <h1 style="text-align: center;">Send me a message</h1>
-                <label for="imie">Your name:</label>
-                <input type="text" id="imie" name="imie">
-                <label for="mail">Your email:</label>
-                <input type="text" id="mail" name="mail">
-                <label for="tresc">Message:</label>
-                <textarea id="tresc"></textarea>
-                <input id="submit" onclick="sendMail()" value="Send &gt;&gt;">
-            </form>
+            <div class="contact-links">
+              <a href="https://www.linkedin.com/in/aleksandra-grzelik-070291210?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app&fbclid=IwAR36g7HqOMaWRaIIc6dOUlOCUwKUVuVgH_zEZzSmF-seF1W-PBMWviSxEC0" target="_blank">
+                <img src="imgs/icons/linkedin.png" />
+                <p>LinkedIn</p>
+              </a>
+            </div>
+          </div>
+          <form>
+            <h1 style="text-align:center">Send me a message</h1>
+            <label _for="imie">Your name:</label>
+            <input type="text" id="imie" name="imie" />
+            <label _for="email">Your email:</label>
+            <input type="email" id="email" name="email" />
+            <label _for="tresc">Message:</label>
+            <textarea id="tresc"></textarea>
+            <input id="submit" onclick="sendMail()" value="Send &gt;" />
+          </form>
         </div>
+      </div>
     </div>
-
     <footer>
-        <p id="year"> All rights reserved.</p> 
-        <p>Design by <a href="https://matig152.github.io/">Mateusz Grzelik &#128279;</a></p>
+      <p id="year"></p>
+      <p>
+        Zaprojektowa&lstrok;:
+        <a href="https://matig152.github.io/">
+          Mateusz Grzelik &#128279;
+          <script src="http://192.168.0.27:5500/js/main.js"></script>
+        </a>
+      </p>
     </footer>
-</body>
+  </body>
 </html>

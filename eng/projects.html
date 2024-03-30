@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- METADATA -->
+    <title>Projekty - Aleksandra Grzelik</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projekty - Aleksandra Grzelik" />
+    <meta name="author" content="Aleksandra Grzelik" />
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Projekty - Aleksandra Grzelik" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://agrzelik.github.io/eng/projects.html" />
+    <meta property="og:description" content="Projekty - Aleksandra Grzelik" />
+    <meta property="og:image" content="http://192.168.0.27:5500/" />
+    <meta property="og:locale" content="en_EN" />
+    <!-- RESOURCES -->
+    <link rel="stylesheet" href="http://192.168.0.27:5500/css/main.css" />
+    <link rel="stylesheet" href="http://192.168.0.27:5500/css/blog.css" />
+    <link rel="stylesheet" href="http://192.168.0.27:5500/css/projects.css" />
+    <script src="https://kit.fontawesome.com/d7fb58415a.js" crossorigin="anonymous"></script>
+    <!-- ICONS -->
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <!-- CANNONICAL -->
+    <link rel="cannonical" href="https://agrzelik.github.io/eng/projects.html" />
+  </head>
+  <body onload="preloader()">
+    <div id="preloader">
+      <div id="preloader-polygon">
+        <div id="preloader-polygon-side-1"></div>
+        <div id="preloader-polygon-side-2"></div>
+        <div id="preloader-polygon-side-3"></div>
+        <div id="preloader-polygon-side-4"></div>
+        <div id="preloader-polygon-side-5"></div>
+        <div id="preloader-polygon-side-6"></div>
+      </div>
+    </div>
+    <div id="sideMenu">
+      <a href="http://192.168.0.27:5500/eng.html#about-me" onclick="document.querySelector('.about-me').scrollIntoView();closeMenu()">
+        About me
+      </a>
+      <a href="http://192.168.0.27:5500/eng/projects.html">
+        My Projects
+      </a>
+      <a href="http://192.168.0.27:5500/eng/blog.html">
+        Blog
+      </a>
+      <a href="http://192.168.0.27:5500/eng.html#contact" onclick="document.querySelector('.contact').scrollIntoView();closeMenu()">
+        Contact me
+      </a>
+    </div>
+    <nav id="navbar">
+      <div class="navbar-logo" onclick="location.href='/eng.html'">
+        <h1>
+          Aleksandra Grzelik
+        </h1>
+        <p>
+          Data science
+        </p>
+      </div>
+      <div id="navbar-logowrap">
+        <a href="http://192.168.0.27:5500/eng.html#about-me" onclick="document.querySelector('.about-me').scrollIntoView()">
+          About me
+        </a>
+        <a href="http://192.168.0.27:5500/eng/projects.html">
+          My Projects
+        </a>
+        <a href="http://192.168.0.27:5500/eng/blog.html">
+          Blog
+        </a>
+        <a href="http://192.168.0.27:5500/eng.html#contact" onclick="document.querySelector('.contact').scrollIntoView()">
+          Contact me
+        </a>
+        <div class="lang-icon" onclick="language()">
+          <p id="lang-icon-name">
+            English
+          </p>
+          <img src="http://192.168.0.27:5500/imgs/icons/eng.png" />
+          <p id="lang-arrow">
+            &#9660;
+          </p>
+        </div>
+        <div class="mobileMenu" onclick="mobileMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="lang">
+          <div onclick="window.open('http://192.168.0.27:5500//projects.html', target='_self')">
+            <p>
+              Polski
+            </p>
+            <img src="http://192.168.0.27:5500/imgs/icons/pl.png" />
+          </div>
+          <div onclick="window.open('http://192.168.0.27:5500//fr/projects.html', target='_self')">
+            <p>
+              Fran&ccedil;ais
+            </p>
+            <img src="http://192.168.0.27:5500/imgs/icons/fr.png" />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="contentWrapper  projectWrapper">
+      <h1>Projects</h1>
+      <section class="projects">
+        <a class="projectPreview" href="/eng/projects/examplaryproject1.html">
+          <img src="../imgs/projects/project1.jpeg" />
+          <div class="desc">
+            <h3>Exampleproject</h3>
+            <small>20/02/2024</small>
+            <p>Nawet nie wiesz jak się ciesze, że miałem przyjemnosc modelowac ekosystemy ;););)</p>
+          </div>
+        </a>
+      </section>
+    </div>
+    <footer>
+      <p id="year"></p>
+      <p>
+        Zaprojektowa&lstrok;:
+        <a href="https://matig152.github.io/">
+          Mateusz Grzelik &#128279;
+          <script src="http://192.168.0.27:5500/js/main.js"></script>
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>

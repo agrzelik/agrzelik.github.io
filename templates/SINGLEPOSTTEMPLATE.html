@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pl"> <!-- LANGUAGE -->
+    <!-- META DATA --> 
+    <title><!-- TYTUŁ --></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aleksandra Grzelik - portfolio. Data science, analiza danych i statystyka matematyczna.">
+    <meta name="author" content="Mateusz Grzelik">
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Aleksandra Grzelik"> <!-- TYTUŁ -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agrzelik.github.io/"> <!-- PERMALINK -->
+    <meta property="og:description" content=""> <!-- ZAJAWKA -->
+    <meta property="og:image" content=""> <!-- IMAGE URL -->
+    <meta property=”og:locale” content=”pl_PL”> <!-- LANGUAGE -->
+    <!-- RESOURCES -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <script src="https://kit.fontawesome.com/d7fb58415a.js" crossorigin="anonymous"></script>    
+    <!-- ICONS -->
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- CANNONICAL -->
+    <link rel="canonical" href="https://agrzelik.github.io/blog.html"/> <!-- PERMALINK -->
+</head>
+<body onload="preloader()">
+    <div id="preloader">
+        <div id="preloader-polygon">
+            <div id="preloader-polygon-side-1"></div>
+            <div id="preloader-polygon-side-2"></div>
+            <div id="preloader-polygon-side-3"></div>
+            <div id="preloader-polygon-side-4"></div>
+            <div id="preloader-polygon-side-5"></div>
+            <div id="preloader-polygon-side-6"></div>
+        </div>
+    </div>
+
+    <div id="sideMenu">
+        <a href="/../#about-me" onclick="document.querySelector('.about-me').scrollIntoView();closeMenu()">O mnie</a>
+        <a href="/../projekty.html">Moje Projekty</a>
+        <a href="/../blog.html">Blog</a>
+        <a href="/../#contact" onclick="document.querySelector('.contact').scrollIntoView();closeMenu()">Kontakt</a>
+    </div>
+
+    <nav id="navbar">
+        <div class="navbar-logo" onclick="location.href='/'">
+            <h1>Aleksandra Grzelik</h1>
+            <p>Analiza danych</p>
+        </div>
+        <div id="navbar-logowrap">
+            <a href="/../#about-me" onclick="document.querySelector('.about-me').scrollIntoView()">O mnie</a>
+            <a href="/../projekty.html">Moje Projekty</a>
+            <a href="/../blog.html">Blog</a>
+            <a href="/../#contact" onclick="document.querySelector('.contact').scrollIntoView()">Kontakt</a>
+            <div class="lang-icon" onclick="language()">
+                <p id="lang-icon-name">Polski</p>
+                <img src="../imgs/icons/pl.png">
+                <p id="lang-arrow">&#9660;</p>
+            </div>
+            <div class="mobileMenu" onclick="mobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="lang">
+                <div onclick="location.href='/../eng/blog/post1.html'"> <!-- ENG PERMALINK -->
+                    <p>English</p>
+                    <img src="../imgs/icons/eng.png">
+                </div>
+                <div onclick="location.href='/../fr/blog/post1.html'"> <!-- FR PERMALINK -->
+                    <p>Fran&ccedil;ais</p>
+                    <img src="../imgs/icons/fr.png">
+                </div>
+            </div>
+        </div>        
+    </nav>
+
+    <div class="contentWrapper">
+        <article class="post">
+            <header>
+                <h1>Przykładowy post 1</h1> <!-- TYTUŁ  -->
+                <h4>03/12/2024</h4> <!-- DATA -->
+                <div class="links">
+                    <div class="link" onclick="document.getElementById('share').style.display='block'">
+                        <div class="linkIcon">
+                            <img src="../imgs/icons/share.png">
+                        </div>
+                        <p>Udostępnij</p>
+                    </div>
+                    <div class="link" onclick="document.getElementById('cite').style.display='block'">
+                        <div class="linkIcon">
+                            <img src="../imgs/icons/cite.png">
+                        </div>
+                        <p>Cytuj</p>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <figure class="postPhoto">
+                    <img src="../imgs/example.jpg">
+                    <figcaption>Przykładowy opis zdjecia</figcaption> <!-- IMG DESC -->
+                </figure>
+                <section class="postContent"> <!-- CONTENT  -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu tortor non risus bibendum ullamcorper. Quisque sed ex ac ante rhoncus laoreet sit amet a ligula. Nunc id gravida erat. Vivamus ultricies, metus id venenatis mattis, magna enim dapibus dolor, a ullamcorper lorem sem sit amet enim. Aenean fringilla ante ac ligula vestibulum porta. Quisque congue neque ut turpis aliquam placerat nec in lacus. Etiam a tempor massa, laoreet convallis odio. Integer ornare porta risus at dictum. Integer ornare sed turpis eget consequat. Morbi pulvinar pharetra sagittis. Praesent faucibus, tortor vitae euismod porta, nisl nibh eleifend metus, ac ornare risus ex et dui. Maecenas fermentum nisl ipsum, vitae molestie lorem iaculis vitae. Curabitur finibus odio id mi vestibulum vulputate. Integer quis feugiat justo. Phasellus sit amet quam et leo semper mollis vitae in augue.
+                        <br><br>
+                        Morbi facilisis turpis et porttitor ornare. Integer a est mauris. Vestibulum congue tellus a diam dictum, at consequat tortor laoreet. Fusce vel tempor leo. Cras molestie lobortis nulla, in tincidunt felis aliquam pellentesque. Nam iaculis, velit sit amet lobortis efficitur, arcu mi dapibus sapien, at posuere odio arcu nec erat. Duis viverra mi sed faucibus bibendum. Etiam nulla mauris, auctor eu erat vel, scelerisque consectetur velit. Sed magna risus, maximus non sagittis vel, auctor sed arcu. Aenean aliquam aliquet urna. In eget scelerisque augue. Nullam elit eros, lobortis a urna et, laoreet aliquam quam. Proin eu posuere ex. Quisque suscipit hendrerit sem, vel auctor sem pharetra sit amet. Maecenas enim ligula, varius eget dignissim ut, sagittis sit amet dui. Cras fermentum, leo sed bibendum efficitur, purus leo consequat libero, ut maximus nunc ex vel mi.</p>
+                </section>
+            </main>
+            <section class="sources">  <!-- ŻRÓDŁA -->
+                <h3>Żródła:</h3>
+                <ul>
+                    <li>2023 Wikipedia</li>
+                    <li>2024 Lorem Ipsum</li>
+                </ul>
+            </section>
+        </article>
+    </div>
+
+    <div id="share">
+        <div class="mask" onclick="document.getElementById('share').style.display='none'"></div>
+        <div class="box">
+            <div class="close" onclick="document.getElementById('share').style.display='none'">
+                <img src="../imgs/icons/close.png">
+            </div>
+            <h3>URL:</h3>
+            <p>agrzelik.github.io/blog/post1.html</p>
+        </div>
+    </div>
+
+    <div id="cite">
+        <div class="mask" onclick="document.getElementById('cite').style.display='none'"></div>
+        <div class="box">
+            <div class="close" onclick="document.getElementById('cite').style.display='none'">
+                <img src="../imgs/icons/close.png">
+            </div>
+            <h3>Bezpośrednio:</h3>
+            <div class="copyField">
+                <p id="citeDirect">
+                    Grzelik A. 
+                    <span>(2024)</span>
+                    <i>Przykładowy post 1</i>.
+                    URL: <span>agrzelik.github.io/blog/post1.html</span>
+                </p>
+                <div class="copyIcon" onclick="copyToClipBoard(document.getElementById('citeDirect'))">
+                    <i class="fa-regular fa-copy"></i>
+                </div>
+            </div>
+            <h3>BibTex:</h3>
+            <div class="copyField">
+                <p>@misc{PrzykladowyPost1,<br>
+                    &nbsp; title={Przykładowy post 1},<br> 
+                    &nbsp; url={agrzelik.github.io/blog/post1.html},<br>
+                    &nbsp; author={Grzelik, Aleksandra},<br>
+                    &nbsp; year={2024},<br>
+                    &nbsp; month={Mar}<br>
+                    } 
+                </p>
+                <div class="copyIcon">
+                    <i class="fa-regular fa-copy"></i>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p id="year"> Wszelkie prawa zastrzeżone</p> 
+        <p>Zaprojektował <a href="https://matig152.github.io/">Mateusz Grzelik &#128279;</a></p>
+    </footer>
+
+
+    <!-- JS SCRIPT -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

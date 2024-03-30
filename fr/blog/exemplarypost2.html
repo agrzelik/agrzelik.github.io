@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- METADATA -->
+    <title>Exemple de projet numéro 2</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Exemple de projet numéro 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet imperdiet elit." />
+    <meta name="author" content="Aleksandra Grzelik" />
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Exemple de projet numéro 2" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://agrzelik.github.io/fr/blog/exemplarypost2.html" />
+    <meta property="og:description" content="Exemple de projet numéro 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet imperdiet elit." />
+    <meta property="og:image" content="http://192.168.0.27:5500/imgs/posts/asfas.png" />
+    <meta property="og:locale" content="fr_FR" />
+    <!-- RESOURCES -->
+    <link rel="stylesheet" href="http://192.168.0.27:5500/css/main.css" />
+    <link rel="stylesheet" href="http://192.168.0.27:5500/css/blog.css" />
+    <link rel="stylesheet" href="http://192.168.0.27:5500/css/projects.css" />
+    <script src="https://kit.fontawesome.com/d7fb58415a.js" crossorigin="anonymous"></script>
+    <!-- ICONS -->
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <!-- CANNONICAL -->
+    <link rel="cannonical" href="https://agrzelik.github.io/fr/blog/exemplarypost2.html" />
+  </head>
+  <body onload="preloader()">
+    <div id="preloader">
+      <div id="preloader-polygon">
+        <div id="preloader-polygon-side-1"></div>
+        <div id="preloader-polygon-side-2"></div>
+        <div id="preloader-polygon-side-3"></div>
+        <div id="preloader-polygon-side-4"></div>
+        <div id="preloader-polygon-side-5"></div>
+        <div id="preloader-polygon-side-6"></div>
+      </div>
+    </div>
+    <div id="sideMenu">
+      <a href="http://192.168.0.27:5500/fr.html#about-me" onclick="document.querySelector('.about-me').scrollIntoView();closeMenu()">
+        Sur moi
+      </a>
+      <a href="http://192.168.0.27:5500/fr/projects.html">
+        Mes projets
+      </a>
+      <a href="http://192.168.0.27:5500/fr/blog.html">
+        Blog
+      </a>
+      <a href="http://192.168.0.27:5500/fr.html#contact" onclick="document.querySelector('.contact').scrollIntoView();closeMenu()">
+        Contactez-moi
+      </a>
+    </div>
+    <nav id="navbar">
+      <div class="navbar-logo" onclick="location.href='/fr.html'">
+        <h1>
+          Aleksandra Grzelik
+        </h1>
+        <p>
+          L'Analyse des Donnes
+        </p>
+      </div>
+      <div id="navbar-logowrap">
+        <a href="http://192.168.0.27:5500/fr.html#about-me" onclick="document.querySelector('.about-me').scrollIntoView()">
+          Sur moi
+        </a>
+        <a href="http://192.168.0.27:5500/fr/projects.html">
+          Mes projets
+        </a>
+        <a href="http://192.168.0.27:5500/fr/blog.html">
+          Blog
+        </a>
+        <a href="http://192.168.0.27:5500/fr.html#contact" onclick="document.querySelector('.contact').scrollIntoView()">
+          Contactez-moi
+        </a>
+        <div class="lang-icon" onclick="language()">
+          <p id="lang-icon-name">
+            Fran&ccedil;ais
+          </p>
+          <img src="http://192.168.0.27:5500/imgs/icons/fr.png" />
+          <p id="lang-arrow">
+            &#9660;
+          </p>
+        </div>
+        <div class="mobileMenu" onclick="mobileMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="lang">
+          <div onclick="window.open('http://192.168.0.27:5500//blog/exemplarypost2.html', target='_self')">
+            <p>
+              Polski
+            </p>
+            <img src="http://192.168.0.27:5500/imgs/icons/pl.png" />
+          </div>
+          <div onclick="window.open('http://192.168.0.27:5500//eng/blog/exemplarypost2.html', target='_self')">
+            <p>
+              English
+            </p>
+            <img src="http://192.168.0.27:5500/imgs/icons/eng.png" />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="contentWrapper">
+      <article class="post">
+        <header>
+          <h1>
+            Exemple de projet numéro 2
+          </h1>
+          <h4>
+            05/08/2024
+          </h4>
+          <div class="links">
+            <div class="link" onclick="document.getElementById('share').style.display='block'">
+              <div class="linkIcon">
+                <img src="../../imgs/icons/share.png" />
+              </div>
+              <p>
+                Propagater
+              </p>
+            </div>
+            <div class="link" onclick="document.getElementById('cite').style.display='block'">
+              <div class="linkIcon">
+                <img src="../../imgs/icons/cite.png" />
+              </div>
+              <p>
+                Citation
+              </p>
+            </div>
+          </div>
+        </header>
+        <main>
+          <figure class="postPhoto">
+            <img src="/../imgs/posts/asfas.png" />
+            <figcaption>
+              
+            </figcaption>
+          </figure>
+          <section class="postContent">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet imperdiet elit. Pellentesque molestie semper orci, ac luctus felis venenatis quis. In commodo porta lacus at mattis. Etiam mi libero, viverra eget laoreet eget, consequat ut neque. Curabitur id mi vitae arcu lacinia tempor at nec nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pellentesque, neque non elementum molestie, enim orci sagittis ligula, sit amet feugiat tortor augue ac diam. Vivamus vitae maximus nunc. Proin rhoncus tincidunt risus, non iaculis nibh eleifend ut. Integer libero sem, commodo vel dolor at, molestie fringilla velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet imperdiet elit. Pellentesque molestie semper orci, ac luctus felis venenatis quis. In commodo porta lacus at mattis. Etiam mi libero, viverra eget laoreet eget, consequat ut neque. Curabitur id mi vitae arcu lacinia tempor at nec nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pellentesque, neque non elementum molestie, enim orci sagittis ligula, sit amet feugiat tortor augue ac diam. Vivamus vitae maximus nunc. Proin rhoncus tincidunt risus, non iaculis nibh eleifend ut. Integer libero sem, commodo vel dolor at, molestie fringilla velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; </p>
+          </section>
+        </main>
+      </article>
+    </div>
+    <div id="share">
+      <div class="mask" onclick="document.getElementById('share').style.display='none'"></div>
+      <div class="box">
+        <div class="close" onclick="document.getElementById('share').style.display='none'">
+          <img src="../../imgs/icons/close.png" />
+        </div>
+        <h3>
+          URL:
+        </h3>
+        <p>
+          https://agrzelik.github.io/fr/blog/exemplarypost2.html
+        </p>
+      </div>
+    </div>
+    <div id="cite">
+      <div class="mask" onclick="document.getElementById('cite').style.display='none'"></div>
+      <div class="box">
+        <div class="close" onclick="document.getElementById('cite').style.display='none'">
+          <img src="../../imgs/icons/close.png" />
+        </div>
+        <h3>
+          Link:
+        </h3>
+        <p>
+          Grzelik A. 
+          <span>
+            (2024), 
+          </span>
+          <i>
+            Exemple de projet numéro 2
+          </i>
+          , URL: 
+          https://agrzelik.github.io/fr/blog/exemplarypost2.html
+        </p>
+        <h3>
+          BibTeX:
+        </h3>
+        <p>
+          @misc{exemplarypost2,
+          <br />
+          &nbsp;&nbsp;&nbsp;
+          &nbsp; title={Exemple de projet numéro 2},
+          <br />
+          &nbsp;&nbsp;&nbsp;
+          &nbsp; url={https://agrzelik.github.io/fr/blog/exemplarypost2.html},
+          <br />
+          &nbsp;&nbsp;&nbsp;
+          &nbsp; author={Grzelik, Aleksandra},
+          <br />
+          &nbsp;&nbsp;&nbsp;
+          &nbsp; year={2024},
+          <br />
+          }
+        </p>
+      </div>
+    </div>
+    <footer>
+      <p id="year"></p>
+      <p>
+        Le projet:
+        <a href="https://matig152.github.io/">
+          Mateusz Grzelik &#128279;
+          <script src="http://192.168.0.27:5500/js/main.js"></script>
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>

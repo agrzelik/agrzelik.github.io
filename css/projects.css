@@ -1,0 +1,219 @@
+/*#region NAVBAR*/
+#navbar{
+    background-color: var(--primary);
+    height: 60px;
+}
+/*#endregion*/
+
+/*#region CONTENTWRAP*/
+.projectWrapper{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 70px;
+    min-height: calc(100vh - 70px);
+}
+/*#endregion*/
+.contentWrapper h1{
+    color: var(--primary);
+    text-align: center;
+    padding: 15px 0;
+}
+
+.projects{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    gap: 40px;
+}
+.projectPreview{
+    color: var(--primary);
+    height: 500px;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px lightgrey;
+    transition: all .2s;
+    text-decoration: none;
+}
+.projectPreview:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+}
+.projectPreview img{
+    object-fit: cover;
+    max-height: 300px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.projectPreview .desc{
+    padding: 10px 20px;
+}
+.projectPreview h3{
+    font-size: 24px;
+}
+.projectPreview small{
+}
+.projectPreview p{
+
+}
+
+/*SINGLE*/
+.singleProject{
+    width: 100%;
+    height: 700px;
+    color: var(--primary);
+}
+.singleProject header{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.metaData h1{
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+    font-size: 30px;
+}
+.metaData h4{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 100;
+    text-align: left;
+}
+.metaData p{
+    margin-bottom: 40px;
+}
+.metaData a{
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: all .1s;
+    font-size: 24px;
+}
+.metaData a:hover{
+
+}
+.metaData a i{
+    margin-left: 2px;
+    font-size: 20px;
+    position: relative;
+    top: -2px
+}
+.mainPhoto img{
+    max-width: 700px;
+    max-height: 60vh;
+    border-radius: 20px;
+}
+
+.content{
+    font-size: 18px;
+}
+
+
+/*#region MOBILE*/
+@media screen and (max-width: 992px) {
+    .projectWrapper{
+        width: 96%;
+    }
+    .contentWrapper h1{
+        padding: 10px 0;
+        font-size: 24px;
+    }
+    .projects{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .projectPreview{
+        height: auto;
+        min-height: 300px;
+        display: block;
+    }
+    .projectPreview:hover{
+        transform: scale(1);
+    }
+    .projectPreview img{
+        object-fit: cover;
+        height: 200px;
+        width: 100%;
+    }
+    .projectPreview .desc{
+        padding: 5px 10px;
+        padding-bottom: 20px;
+    }
+    .projectPreview h3{
+        font-size: 22px;
+        margin: 0;
+        padding: 0;
+    }
+    .projectPreview small{
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    
+    .projectPreview p{
+        font-size: 16px;
+    }
+    
+    /*SINGLE*/
+    .singleProject{
+        width: 100%;
+        height: auto;
+        color: var(--primary);
+    }
+    .singleProject header{
+        grid-template-columns: auto;
+    }
+    .metaData h1{
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        font-size: 24px;
+    }
+    .metaData h4{
+        margin-bottom: 15px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .metaData p{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .metaData a{
+        padding: 5px;
+        text-decoration: none;
+        text-align: center;
+        color: black;
+        display: block;
+        transition: all .1s;
+        font-size: 20px;
+    }
+    .metaData a i{
+        margin-left: 2px;
+        font-size: 20px;
+        position: relative;
+        top: -2px
+    }
+    .mainPhoto{
+        padding: 0;
+        margin: 0;
+        margin-top: 10px;
+        display: grid;
+        place-content: center;
+    }
+    .mainPhoto img{
+        max-width: 96vw;
+        max-height: 60vh;
+        border-radius: 20px;
+    }
+    
+    .content{
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    
+}
+/*#endregion*/
