@@ -2,7 +2,7 @@ from airium import Airium
 
 
 
-base_url = "http://192.168.0.27:5500/"
+base_url = "https://agrzelik.github.io/"
 
 def head(a, language, title, excerpt, permalink, img_url, icon_url, apple_icon_url):
         with a.head():
