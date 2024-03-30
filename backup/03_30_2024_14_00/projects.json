@@ -1,0 +1,30 @@
+[
+	{
+		"date": "03/2022 - 06/2022",
+		"img": "imgs/projects/datascience.jfif",
+		"permalink": "datascienceinpractice",
+		"pl": {
+			"title": "Data Science in Practice",
+			"excerpt": "Podczas studiów na Uniwersytecie Łódzkim uczestniczyłam w projekcie &quot;Data Science in Practice&quot;, a ramach którego pracowałam nad klasyfikacją klientów pod kątem wniosków kredytowych. Wybrany model został szczegółowo objaśniony za pomocą technik SHAP, LIME i PDP. Nasza praca pozwoliła lepiej zrozumieć procesy decyzyjne w sektorze finansowym.",
+			"content": "<p>W projekcie &quot;Data Science in Practice&quot; uczestniczyłam w czasie studiów licencjackich na kierunku Ekonometria i Analityka Danych na Uniwersytecie Łódzkim, projekt był realizowany we współpracy z McKinsey oraz Uniwersytetem Warszawskim. Jego celem było zastosowanie technik uczenia maszynowego w praktyce biznesowej. Jako uczestniczka projektu, wraz z zespołem, pracowałam nad rozdziałem czwartym, skoncentrowanym na klasyfikacji klientów ze względu na predyspozycje do złożenia wniosku kredytowego. Praca miała na celu identyfikację kluczowych czynników wpływających na decyzję o złożeniu wniosku kredytowego. W czasie trwania projektu porównane zostały modele klasyfikacji, a dla najlepszego z nich przygotowano zestawienie kluczowych cech w oparciu o techniki objaśniania modeli typu blackbox. Do wyboru najistotniejszych zmiennych wykorzystano metody SHAP, LIME i PDP. Te techniki umożliwiły lepsze zrozumienie, jak poszczególne zmienne wpływają na wyniki klasyfikacji. To pozwoliło na wnioskowanie o procesach decyzyjnych klientów w sektorze finansów. Treść podsumowania projektu jest dostępna pod załączonym linkiem.</p>"
+		},
+		"fr": {
+			"title": "Data Science in Practice",
+			"excerpt": "Nawet nie wiesz jak się ciesze, że miałem przyjemnosc modelowac ekosystemy ;););)",
+			"content": "Po francusku opis"
+		},
+		"eng": {
+			"title": "Data Science in Practice",
+			"excerpt": "Nawet nie wiesz jak się ciesze, że miałem przyjemnosc modelowac ekosystemy ;););)",
+			"content": "Exampleproject descritption."
+		},
+		"links": [
+			{
+				"name_pl": "XAI Stories 3.0",
+				"name_eng": "Link 1",
+				"name_fr": "Link 1",
+				"url": "https://pbiecek.github.io/xai_stories_3/"
+			}
+		]
+	}
+]

@@ -1,4 +1,4 @@
-git status
+git pull
 
 python main.py
 
