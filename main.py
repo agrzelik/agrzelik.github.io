@@ -1,4 +1,6 @@
-import json 
+# -*- coding: utf-8 -*-
+
+import json
 from airium import Airium
 import generateposts
 import generateprojects

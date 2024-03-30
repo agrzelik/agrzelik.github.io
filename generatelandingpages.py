@@ -1,10 +1,14 @@
+# -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+
+import codecs
 from airium import Airium
 import json
 import components
 
-with open('posts.json', 'r') as file:
+with codecs.open('posts.json', 'r', 'utf-8') as file:
     posts = json.load(file)
-with open('projects.json', 'r') as file:
+with codecs.open('projects.json', 'r', 'utf8') as file:
     projects = json.load(file)
 
 def generate_landing_page():
@@ -165,7 +169,7 @@ def generate_landing_page():
 
             # FOOTER
             components.footer(a, "pl")
-    f = open("index.html", "w")
+    f = codecs.open("index.html", "w", 'utf-8')
     f.write(str(a))
     f.close()
 
@@ -307,7 +311,7 @@ def generate_landing_page():
 
             # FOOTER
             components.footer(a, "en")
-    f = open("eng.html", "w")
+    f = codecs.open("eng.html", "w", 'utf-8')
     f.write(str(a))
     f.close()
 
@@ -449,7 +453,7 @@ def generate_landing_page():
 
             # FOOTER
             components.footer(a, "fr")
-    f = open("fr.html", "w")
+    f = codecs.open("fr.html", "w", "utf-8")
     f.write(str(a))
     f.close()
 

@@ -1,9 +1,14 @@
+# -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+
+import codecs
+
 import components
 import json
 from airium import Airium
 
 
-with open('posts.json', 'r') as file:
+with codecs.open('posts.json', 'r', 'utf-8') as file:
     posts = json.load(file)
 
 def generate_post(post):
@@ -120,7 +125,7 @@ def generate_post(post):
             # FOOTER
             components.footer(a, "pl")
 
-    f = open("blog/"+filename, "w")
+    f = codecs.open("blog/"+filename, "w", 'utf-8')
     f.write(str(a))
     f.close()
 
@@ -204,7 +209,7 @@ def generate_post(post):
             # FOOTER
             components.footer(a, "en")
 
-    f = open("eng/blog/"+filename, "w")
+    f = codecs.open("eng/blog/"+filename, "w", 'utf-8')
     f.write(str(a))
     f.close()
 
@@ -289,7 +294,7 @@ def generate_post(post):
             # FOOTER
             components.footer(a, "fr")
 
-    f = open("fr/blog/"+filename, "w")
+    f = codecs.open("fr/blog/"+filename, "w", 'utf-8')
     f.write(str(a))
     f.close()
 
@@ -325,7 +330,7 @@ def generate_blog_page():
                                 a.p(_t=post['pl']['excerpt'])
             # FOOTER
             components.footer(a, "pl")
-    f = open("blog.html", "w")
+    f = codecs.open("blog.html", "w", 'utf-8')
     f.write(str(a))
     f.close()
 
@@ -349,7 +354,7 @@ def generate_blog_page():
                                 a.p(_t=post['eng']['excerpt'])
             # FOOTER
             components.footer(a, "en")
-    f = open("eng/blog.html", "w")
+    f = codecs.open("eng/blog.html", "w", 'utf-8')
     f.write(str(a))
     f.close()
    
@@ -373,7 +378,7 @@ def generate_blog_page():
                                 a.p(_t=post['fr']['excerpt'])
             # FOOTER
             components.footer(a, "fr")
-    f = open("fr/blog.html", "w")
+    f = codecs.open("fr/blog.html", "w", 'utf-8')
     f.write(str(a))
     f.close()
 

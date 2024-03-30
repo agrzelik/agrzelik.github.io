@@ -1,9 +1,12 @@
+# -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+
+import codecs
 import components
 import json
 from airium import Airium
 
-
-with open('projects.json', 'r') as file:
+with codecs.open('projects.json', 'r', 'utf-8') as file:
     projects = json.load(file)
 
 def generate_project(project):
@@ -61,7 +64,7 @@ def generate_project(project):
                     with a.section(klass="content"): a(pl_content)
             # FOOTER
             components.footer(a, "pl")
-    f = open("projects/"+filename+".html", "w")
+    f = codecs.open("projects/"+filename+".html", "w", 'utf-8')
     f.write(str(a))
     f.close()
 
@@ -89,7 +92,7 @@ def generate_project(project):
                     with a.section(klass="content"): a(eng_content)
             # FOOTER
             components.footer(a, "en")
-    f = open("eng/projects/"+filename+".html", "w")
+    f = codecs.open("eng/projects/"+filename+".html", "w", 'utf-8')
     f.write(str(a))
     f.close()
 
@@ -117,7 +120,7 @@ def generate_project(project):
                     with a.section(klass="content"): a(fr_content)
             # FOOTER
             components.footer(a, "fr")
-    f = open("fr/projects/"+filename+".html", "w")
+    f = codecs.open("fr/projects/"+filename+".html", "w", 'utf-8')
     f.write(str(a))
     f.close()
 
@@ -154,7 +157,7 @@ def generate_project_page():
                                 a.p(_t=project['pl']['excerpt'])
             # FOOTER
             components.footer(a, "pl")
-    f = open("projects.html", "w")
+    f = codecs.open("projects.html", "w", 'utf-8')
     f.write(str(a))
     f.close()
 
@@ -178,7 +181,7 @@ def generate_project_page():
                                 a.p(_t=project['eng']['excerpt'])
             # FOOTER
             components.footer(a, "en")
-    f = open("eng/projects.html", "w")
+    f = codecs.open("eng/projects.html", "w", 'utf-8')
     f.write(str(a))
     f.close()
 
@@ -202,7 +205,7 @@ def generate_project_page():
                                 a.p(_t=project['fr']['excerpt'])
             # FOOTER
             components.footer(a, "fr")
-    f = open("fr/projects.html", "w")
+    f = codecs.open("fr/projects.html", "w", 'utf-8')
     f.write(str(a))
     f.close()
 
