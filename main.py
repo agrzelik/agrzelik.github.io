@@ -11,7 +11,7 @@ from datetime import datetime
 import cleardir
 
 # CREATE BACKUP OF JSON FILES
-date_time = datetime.now().strftime("%m_%d_%Y_%H_%M")
+date_time = datetime.now().strftime("%m_%d_%Y_%H_%M_%S")
 backup_directory = f'backup/{date_time}'
 os.makedirs(backup_directory)
 shutil.copy('projects.json', f'{backup_directory}/projects.json')
