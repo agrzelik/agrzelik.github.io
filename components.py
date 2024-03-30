@@ -146,7 +146,7 @@ def footer(a, language):
         a.p(id="year")
         if(language == "en"):
                 with a.p(): 
-                    a("Zaprojektowa&lstrok;:")
+                    a("Design by:")
                     with a.a(href="https://matig152.github.io/"):
                         a("Mateusz Grzelik &#128279;")
                         a.script(src=base_url+"js/main.js")
@@ -158,7 +158,7 @@ def footer(a, language):
                         a.script(src=base_url+"js/main.js")
         else:
                 with a.p(): 
-                    a("Design by:")
+                    a("Zaprojektowa&lstrok;:")
                     with a.a(href="https://matig152.github.io/"):
                         a("Mateusz Grzelik &#128279;")
                         a.script(src=base_url+"js/main.js")
