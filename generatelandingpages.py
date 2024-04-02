@@ -25,6 +25,7 @@ def generate_landing_page():
     # IMGS URLS
     main_bg_url = "imgs/mainbg.jpg"
     about_me_img = "imgs/about.jpg"
+    interests_img = "imgs/interests.jpg"
 
 
     # POLISH HTML    
@@ -120,7 +121,7 @@ def generate_landing_page():
                         a.h1(_t="Zainteresowania")
                         a.p(_t="Lubię sport, jeżdżę na rolkach, ćwiczę step aerobik, czasami wybieram ćwiczenia siłowe. Lubię spacerować, najczęściej z moimi pieskami Riną i Ruby, to dla mnie okazja do aktywnego wypoczynku i kontaktu z naturą, który jest dla mnie ważny. Pasjonuje mnie czytanie, chociaż ciągle brakuje mi na nie czasu. Najchętniej sięgam po literaturę piękną, reportaże, pozycje popularnonaukowe i romanse. Prowadzę subiektywny ranking przeczytanych pozycji, w 2023 roku moimi faworytami były “Fizyka Smutku” (Georgi Gospodinow) oraz “Madame” (Antoni Libera). W bieżącym roku uczestniczę w wyzwaniu czytelniczym - 40 książek, a moje postępy śledzę na <a href='https://www.goodreads.com/user/show/163587605-ola'>goodreads</a>.  ")
                     with a.div(klass="bio-photo"):
-                        a.img(src="imgs/asfas.jpg")
+                        a.img(src=interests_img)
                 with a.section(klass="projectBlog"):
                     with a.article():
                         a.h1(_t="Projekty")
@@ -259,7 +260,7 @@ def generate_landing_page():
                         a.h1(_t="Interests")
                         a.p(_t="I enjoy sports, I rollerblade, practice step aerobics, sometimes I opt for strength training. I like to walk, usually with my dogs Rina and Ruby, it's an opportunity to relax actively and get in touch with nature, which is important to me. I am keen on reading, although I constantly lack time for it. My favourite genres are fiction, reportage, popular science and romance. I conduct a subjective ranking of the books I have read; in 2023, my favourites were The Physics of Sorrow (Georgi Gospodinov) and Madame (Antoni Libera). This year I am taking part in a reading challenge - 40 books - and I track my progress on <a href='https://www.goodreads.com/user/show/163587605-ola'>goodreads</a>.  ")
                     with a.div(klass="bio-photo"):
-                        a.img(src="imgs/asfas.jpg")
+                        a.img(src=interests_img)
                 with a.section(klass="projectBlog"):
                     with a.article():
                         a.h1(_t="Projects")
@@ -398,7 +399,7 @@ def generate_landing_page():
                         a.h1(_t="Interests")
                         a.p(_t="J'aime le sport, je fais du roller, je pratique le step aerobics et parfois je choisis la gym. J'aime me promener, le plus souvent avec mes chiennes Rina et Ruby, c'est l'occasion de me détendre activement et de prendre contact avec la nature, ce qui est important pour moi. Je suis passionnée de lecture, bien que le temps manque toujours pour lire. Mes genres préférés sont la fiction, le reportage, la science populaire et le roman d'amour. Je mène un classement subjectif des livres que j'ai lus, en 2023, mes préférés étaient La physique de la mélancolie ( Guéorgui Gospodinov ) et Madame ( Antoni Libera ). Cette année, je participe à un défi de lecture - 40 livres - et je trace mes progrès sur <a href='https://www.goodreads.com/user/show/163587605-ola'>goodreads</a>.  ")
                     with a.div(klass="bio-photo"):
-                        a.img(src="imgs/asfas.jpg")
+                        a.img(src=interests_img)
                 with a.section(klass="projectBlog"):
                     with a.article():
                         a.h1(_t="Projets")
