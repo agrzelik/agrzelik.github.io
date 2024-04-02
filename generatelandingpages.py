@@ -32,7 +32,7 @@ def generate_landing_page():
     a = Airium()
     a('<!DOCTYPE html>')
     with a.html(lang="pl"):
-        components.head(a, "pl", site_title_pl, site_description_pl, "/", "imgs/mainbg.jpeg", icon_url, apple_icon_url)
+        components.head(a, "pl", site_title_pl, site_description_pl, "/", "imgs/mainbg.jpg", icon_url, apple_icon_url)
         with a.body(onload="preloader()", onscroll="navbar()"):
             components.navbar(a, "pl", "/", "/eng.html", "/fr.html")
             # MAINFRAME
@@ -171,7 +171,7 @@ def generate_landing_page():
     a = Airium()
     a('<!DOCTYPE html>')
     with a.html(lang="en"):
-        components.head(a, "en", site_title_eng, site_description_eng, "/", "imgs/mainbg.jpeg", icon_url, apple_icon_url)
+        components.head(a, "en", site_title_eng, site_description_eng, "/", "imgs/mainbg.jpg", icon_url, apple_icon_url)
         with a.body(onload="preloader()", onscroll="navbar()"):
             components.navbar(a, "en", "/", "/eng.html", "/fr.html")
             # MAINFRAME
@@ -310,7 +310,7 @@ def generate_landing_page():
     a = Airium()
     a('<!DOCTYPE html>')
     with a.html(lang="fr"):
-        components.head(a, "fr", site_title_fr, site_description_fr, "/", "imgs/mainbg.jpeg", icon_url, apple_icon_url)
+        components.head(a, "fr", site_title_fr, site_description_fr, "/", "imgs/mainbg.jpg", icon_url, apple_icon_url)
         with a.body(onload="preloader()", onscroll="navbar()"):
             components.navbar(a, "fr", "/", "/eng.html", "/fr.html")
             # MAINFRAME
