@@ -22,6 +22,10 @@ def generate_landing_page():
     # HTML META DATA
     icon_url = "/favicon.ico"
     apple_icon_url = "/apple-touch-icon.png"
+    # IMGS URLS
+    main_bg_url = "imgs/mainbg.jpg"
+    about_me_img = "imgs/about.jpg"
+
 
     # POLISH HTML    
     a = Airium()
@@ -32,7 +36,7 @@ def generate_landing_page():
             components.navbar(a, "pl", "/", "/eng.html", "/fr.html")
             # MAINFRAME
             with a.div(klass="mainbg"):
-                a.img(src="imgs/mainbg.jpg")
+                a.img(src=main_bg_url)
 
             with a.div(klass="mainframe"):
                 with a.div(klass="mainframe-content"):
@@ -42,7 +46,7 @@ def generate_landing_page():
             with a.div(klass="about-me"):
                 with a.div(klass="bio"):
                     with a.div(klass="bio-photo"):
-                        a.img(src="imgs/asfas.jpg")
+                        a.img(src=about_me_img)
                     with a.div(klass="bio-content"):
                         a.h1(_t="O mnie")
                         a.p(_t="Nazywam się Aleksandra Grzelik. Pasjonuje mnie modelowanie matematyczne i statystyczne, szczególnie zjawisk z zakresu psychologii, ekologii czy socjologii. W lipcu 2022 ukończyłam studia licencjackie na kierunku Ekonometria i Analityka Danych na Uniwersytecie Łódzkim, moja praca dyplomowa podejmowała statystyczną analizę poziomu szczęścia studentów. Praca była inspirowana alternatywnym (wobec PKB) podejściem do pomiaru dobrobytu społeczeństwa, miarami opartymi na czynnikach takich jak dbałość o środowisko czy praworządność. W oparciu o badania, m.in. World Happiness Report, przygotowane zostały miara poziomu szczęścia i model, który po odpowiedniej walidacji, pozwolił wyłonić najważniejsze zmienne decydujące o poziomie szczęścia wśród studentów. W październiku 2022 rozpoczęłam studia magisterskie na kierunku Analiza Danych (UŁ). W czasie studiów zdobyłam kompetencje związane z matematyką oraz sztuczną inteligencją, uczestniczyłam w wielu ciekawych projektach, więcej o nich w zakładce 'Moje projekty'.")
@@ -171,7 +175,7 @@ def generate_landing_page():
             components.navbar(a, "en", "/", "/eng.html", "/fr.html")
             # MAINFRAME
             with a.div(klass="mainbg"):
-                a.img(src="imgs/mainbg.jpg")
+                a.img(src=main_bg_url)
 
             with a.div(klass="mainframe"):
                 with a.div(klass="mainframe-content"):
@@ -181,7 +185,7 @@ def generate_landing_page():
             with a.div(klass="about-me"):
                 with a.div(klass="bio"):
                     with a.div(klass="bio-photo"):
-                        a.img(src="imgs/asfas.jpg")
+                        a.img(src=about_me_img)
                     with a.div(klass="bio-content"):
                         a.h1(_t="About me")
                         a.p(_t="My name is Aleksandra Grzelik. I am interested in mathematical and statistical modeling, particularly for phenomena in the field of psychology, ecology or sociology. I graduated from the University of Lodz in July 2022 with a BA in Econometrics and Data Analytics, my thesis dealt with statistical analysis of students' happiness level. The thesis was inspired by an alternative (to GDP) approach to measuring the well-being of a society: the measures based on factors such as environmental care or lawfulness. On the basis of research, including the World Happiness Report, a happiness measure and a model were prepared. After appropriate validation, the model was used to identify the most important variables determining the level of happiness among students. In October 2022, I started MA in Data Analysis (University of Łódź). During studies, I gained competences in mathematics and artificial intelligence and participated in many interesting projects. Read more about them in 'My projects' tab.")
@@ -310,7 +314,7 @@ def generate_landing_page():
             components.navbar(a, "fr", "/", "/eng.html", "/fr.html")
             # MAINFRAME
             with a.div(klass="mainbg"):
-                a.img(src="imgs/mainbg.jpg")
+                a.img(src=main_bg_url)
 
             with a.div(klass="mainframe"):
                 with a.div(klass="mainframe-content"):
@@ -320,7 +324,7 @@ def generate_landing_page():
             with a.div(klass="about-me"):
                 with a.div(klass="bio"):
                     with a.div(klass="bio-photo"):
-                        a.img(src="imgs/asfas.jpg")
+                        a.img(src=about_me_img)
                     with a.div(klass="bio-content"):
                         a.h1(_t="Sur moi")
                         a.p(_t="Je m'appelle Aleksandra Grzelik. Je m'intéresse à la modélisation mathématique et statistique, en particulier pour les phénomènes dans le domaine de la psychologie, de l'écologie ou de la sociologie. J'ai terminé mes études à l'université de Lodz en juillet 2022 avec une licence en Économétrie et Analyse de Donnée, ma thèse portait sur l'analyse statistique du niveau de bonheur des étudiants. La thèse a été inspirée par une approche alternative (au produit intérieur brut) pour mesurer le bien-être d'une société : les mesures basées sur des facteurs tels que la protection de l'environnement ou la légalité. Sur la base de recherches, telles que le World Happiness Report, une mesure du bonheur et un modèle ont été préparés. Après une validation appropriée, le modèle a été utilisé pour identifier les variables les plus importantes qui déterminent le niveau de bonheur des étudiants. En octobre 2022, j'ai commencé une maîtrise en analyse de données (Université de Łódź). Pendant mes études, j'ai acquis des compétences en mathématiques et en intelligence artificielle et j'ai participé à de nombreux projets intéressants. Pour en savoir plus, consultez l'onglet 'Mes projets'.")

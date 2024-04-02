@@ -61,7 +61,7 @@
 /*SINGLE*/
 .singleProject{
     width: 100%;
-    height: 700px;
+    height: auto;
     color: var(--primary);
 }
 .singleProject header{

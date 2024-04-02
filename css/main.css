@@ -215,7 +215,7 @@ body{
 .bio{
     margin: 0 auto;
     width: 90%;
-    height: calc(60vh - 30px);
+    height: auto;
     display: grid;
     gap: 30px;
     grid-template-columns: 1fr 1fr;
