@@ -26,6 +26,7 @@ def generate_landing_page():
     main_bg_url = "imgs/mainbg.jpg"
     about_me_img = "imgs/about.jpg"
     interests_img = "imgs/interests.jpg"
+    internship_icon = "https://static-00.iconduck.com/assets.00/google-ads-icon-2048x1837-4vbvpswm.png"
 
 
     # POLISH HTML    
@@ -98,7 +99,7 @@ def generate_landing_page():
                                     a.small(_t="Accenture Polska")
                                     a.p(_t="<i class=\"fa-regular fa-calendar\"></i> wrzesień 2022 - obecnie")
                             with a.li():
-                                a.img(src="imgs/asfas.png")
+                                a.img(src=internship_icon)
                                 with a.span():
                                     a.h3(_t="Praktyki zawodowe")
                                     a.small(_t="przygotowanie projektu teoretycznego dotyczącego optymalizacji reklam w Google Ads")
@@ -237,7 +238,7 @@ def generate_landing_page():
                                     a.small(_t="Accenture Polska")
                                     a.p(_t="<i class=\"fa-regular fa-calendar\"></i> september 2022 - present")
                             with a.li():
-                                a.img(src="imgs/asfas.png")
+                                a.img(src=internship_icon)
                                 with a.span():
                                     a.h3(_t="Internship")
                                     a.small(_t="Participating in Google Ads optimization project")
@@ -376,7 +377,7 @@ def generate_landing_page():
                                     a.small(_t="Accenture Polska")
                                     a.p(_t="<i class=\"fa-regular fa-calendar\"></i> septembre 2022 - pr&eacute;sent")
                             with a.li():
-                                #a.img(src="imgs/asfas.png")
+                                a.img(src=internship_icon)
                                 with a.span():
                                     a.h3(_t="Stage")
                                     a.small(_t="La Pr&eacute;paration du Projet th&eacute;oretique optimisation des Google Ads")
