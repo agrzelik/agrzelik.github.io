@@ -45,15 +45,7 @@ def generate_landing_page():
                         a.img(src="imgs/asfas.jpg")
                     with a.div(klass="bio-content"):
                         a.h1(_t="O mnie")
-                        a.p(_t="Jestem absolwentką studiów licencjackich na kierunku Ekonometria i Analityka "
-                            "Danych na Uniwersytecie Łódzkim. Podczas studiów zdobyłam wiedzę z zakresu "
-                            "analizy danych, matematyki, ekonomii i modelowania statystycznego. Obecnie "
-                            "studiuję Analizę Danych na Wydziale Matematyki i Informatyki Uniwersytetu "
-                            "Łódzkiego. Chciałabym wykorzystać swoje umiejętności w praktyce i nauczyć "
-                            "się więcej. Moim celem jest rozwój w dziedzinie analizy danych i programowania, "
-                            "interesuję się modelowaniem matematycznym i statystycznym zjawisk z wielu "
-                            "dziedzin, szczególnie psychologii, ekologii, socjologii. Tematem mojej pracy "
-                            "licencjackiej była statystyczna analiza szczęścia wśród studentów mojego kierunku")
+                        a.p(_t="Nazywam się Aleksandra Grzelik. Pasjonuje mnie modelowanie matematyczne i statystyczne, szczególnie zjawisk z zakresu psychologii, ekologii czy socjologii. W lipcu 2022 ukończyłam studia licencjackie na kierunku Ekonometria i Analityka Danych na Uniwersytecie Łódzkim, moja praca dyplomowa podejmowała statystyczną analizę poziomu szczęścia studentów. Praca była inspirowana alternatywnym (wobec PKB) podejściem do pomiaru dobrobytu społeczeństwa, miarami opartymi na czynnikach takich jak dbałość o środowisko czy praworządność. W oparciu o badania, m.in. World Happiness Report, przygotowane zostały miara poziomu szczęścia i model, który po odpowiedniej walidacji, pozwolił wyłonić najważniejsze zmienne decydujące o poziomie szczęścia wśród studentów. W październiku 2022 rozpoczęłam studia magisterskie na kierunku Analiza Danych (UŁ). W czasie studiów zdobyłam kompetencje związane z matematyką oraz sztuczną inteligencją, uczestniczyłam w wielu ciekawych projektach, więcej o nich w zakładce 'Moje projekty'.")
                 with a.div(klass="exp"):
                     with a.div(klass="exp-educ"):
                         a.h2(_t="Edukacja")
@@ -86,11 +78,8 @@ def generate_landing_page():
                         a.h2(_t="Kompetencje")
                         with a.ul(klass="comps"):
                             a.li(_t="zaplecze teoretyczne z zakresu statystyki, matematyki, finansów")
-                            a.li(_t="umiejętność przeprowadzania analiz statystycznych z wykorzystaniem "
-                                "oprogramowania: Statistica, PS IMAGO")
-                            a.li(_t="podstawowa znajomość języków programowania: Python, R, Java, PLSQL")
-                            a.li(_t="tworzenie modeli regresji i klasyfikacji, również z uwzględnieniem koncepcji "
-                                "uczenia maszynowego")
+                            a.li(_t="programowanie: moim ulubionym językiem jest Python")
+                            a.li(_t="tworzenie modeli uczenia maszynowego, sieci neuronowe")
                             a.li(_t="znajomość technik weryfikacji modeli i testów statystycznych")
                             a.li(_t="umiejętność przyswojenia i redakcji tekstów naukowych")
                             a.li(_t="myślenie analityczne, z miejscem na kreatywność")
@@ -125,7 +114,7 @@ def generate_landing_page():
                 with a.div(klass="bio"):
                     with a.div(klass="bio-content", id="interests"):
                         a.h1(_t="Zainteresowania")
-                        a.p(_t="Heheh ksiazki")
+                        a.p(_t="Lubię sport, jeżdżę na rolkach, ćwiczę step aerobik, czasami wybieram ćwiczenia siłowe. Lubię spacerować, najczęściej z moimi pieskami Riną i Ruby, to dla mnie okazja do aktywnego wypoczynku i kontaktu z naturą, który jest dla mnie ważny. Pasjonuje mnie czytanie, chociaż ciągle brakuje mi na nie czasu. Najchętniej sięgam po literaturę piękną, reportaże, pozycje popularnonaukowe i romanse. Prowadzę subiektywny ranking przeczytanych pozycji, w 2023 roku moimi faworytami były “Fizyka Smutku” (Georgi Gospodinow) oraz “Madame” (Antoni Libera). W bieżącym roku uczestniczę w wyzwaniu czytelniczym - 40 książek, a moje postępy śledzę na <a href='https://www.goodreads.com/user/show/163587605-ola'>goodreads</a>.  ")
                     with a.div(klass="bio-photo"):
                         a.img(src="imgs/asfas.jpg")
                 with a.section(klass="projectBlog"):
@@ -195,7 +184,7 @@ def generate_landing_page():
                         a.img(src="imgs/asfas.jpg")
                     with a.div(klass="bio-content"):
                         a.h1(_t="About me")
-                        a.p(_t="HEhehee about me ")
+                        a.p(_t="My name is Aleksandra Grzelik. I am interested in mathematical and statistical modeling, particularly for phenomena in the field of psychology, ecology or sociology. I graduated from the University of Lodz in July 2022 with a BA in Econometrics and Data Analytics, my thesis dealt with statistical analysis of students' happiness level. The thesis was inspired by an alternative (to GDP) approach to measuring the well-being of a society: the measures based on factors such as environmental care or lawfulness. On the basis of research, including the World Happiness Report, a happiness measure and a model were prepared. After appropriate validation, the model was used to identify the most important variables determining the level of happiness among students. In October 2022, I started MA in Data Analysis (University of Łódź). During studies, I gained competences in mathematics and artificial intelligence and participated in many interesting projects. Read more about them in 'My projects' tab.")
                 with a.div(klass="exp"):
                     with a.div(klass="exp-educ"):
                         a.h2(_t="Education")
@@ -227,15 +216,12 @@ def generate_landing_page():
                     with a.div(klass="exp-comp"):
                         a.h2(_t="Competences")
                         with a.ul(klass="comps"):
-                            a.li(_t="zaplecze teoretyczne z zakresu statystyki, matematyki, finansów")
-                            a.li(_t="umiejętność przeprowadzania analiz statystycznych z wykorzystaniem "
-                                "oprogramowania: Statistica, PS IMAGO")
-                            a.li(_t="podstawowa znajomość języków programowania: Python, R, Java, PLSQL")
-                            a.li(_t="tworzenie modeli regresji i klasyfikacji, również z uwzględnieniem koncepcji "
-                                "uczenia maszynowego")
-                            a.li(_t="znajomość technik weryfikacji modeli i testów statystycznych")
-                            a.li(_t="umiejętność przyswojenia i redakcji tekstów naukowych")
-                            a.li(_t="myślenie analityczne, z miejscem na kreatywność")
+                            a.li(_t="theoretical background in statistics, mathematics, finance")
+                            a.li(_t="programming: my favourite language is Python")
+                            a.li(_t="development of machine learning models, neural networks")
+                            a.li(_t="knowledge of techniques for verifying models and statistical tests")
+                            a.li(_t="ability to comprehend and prepare scientific texts")
+                            a.li(_t="analytical thinking, but also creativity")
                     with a.div(klass="exp-job"):
                         a.h2(_t="Experience")
                         with a.ul(klass="exp-tiles"):
@@ -267,7 +253,7 @@ def generate_landing_page():
                 with a.div(klass="bio"):
                     with a.div(klass="bio-content", id="interests"):
                         a.h1(_t="Interests")
-                        a.p(_t="Heheh ksiazki")
+                        a.p(_t="I enjoy sports, I rollerblade, practice step aerobics, sometimes I opt for strength training. I like to walk, usually with my dogs Rina and Ruby, it's an opportunity to relax actively and get in touch with nature, which is important to me. I am keen on reading, although I constantly lack time for it. My favourite genres are fiction, reportage, popular science and romance. I conduct a subjective ranking of the books I have read; in 2023, my favourites were The Physics of Sorrow (Georgi Gospodinov) and Madame (Antoni Libera). This year I am taking part in a reading challenge - 40 books - and I track my progress on <a href='https://www.goodreads.com/user/show/163587605-ola'>goodreads</a>.  ")
                     with a.div(klass="bio-photo"):
                         a.img(src="imgs/asfas.jpg")
                 with a.section(klass="projectBlog"):
@@ -337,7 +323,7 @@ def generate_landing_page():
                         a.img(src="imgs/asfas.jpg")
                     with a.div(klass="bio-content"):
                         a.h1(_t="Sur moi")
-                        a.p(_t="HEhehee sur moi")
+                        a.p(_t="Je m'appelle Aleksandra Grzelik. Je m'intéresse à la modélisation mathématique et statistique, en particulier pour les phénomènes dans le domaine de la psychologie, de l'écologie ou de la sociologie. J'ai terminé mes études à l'université de Lodz en juillet 2022 avec une licence en Économétrie et Analyse de Donnée, ma thèse portait sur l'analyse statistique du niveau de bonheur des étudiants. La thèse a été inspirée par une approche alternative (au produit intérieur brut) pour mesurer le bien-être d'une société : les mesures basées sur des facteurs tels que la protection de l'environnement ou la légalité. Sur la base de recherches, telles que le World Happiness Report, une mesure du bonheur et un modèle ont été préparés. Après une validation appropriée, le modèle a été utilisé pour identifier les variables les plus importantes qui déterminent le niveau de bonheur des étudiants. En octobre 2022, j'ai commencé une maîtrise en analyse de données (Université de Łódź). Pendant mes études, j'ai acquis des compétences en mathématiques et en intelligence artificielle et j'ai participé à de nombreux projets intéressants. Pour en savoir plus, consultez l'onglet 'Mes projets'.")
                 with a.div(klass="exp"):
                     with a.div(klass="exp-educ"):
                         a.h2(_t="Education")
@@ -369,15 +355,12 @@ def generate_landing_page():
                     with a.div(klass="exp-comp"):
                         a.h2(_t="Competences")
                         with a.ul(klass="comps"):
-                            a.li(_t="zaplecze teoretyczne z zakresu statystyki, matematyki, finansów")
-                            a.li(_t="umiejętność przeprowadzania analiz statystycznych z wykorzystaniem "
-                                "oprogramowania: Statistica, PS IMAGO")
-                            a.li(_t="podstawowa znajomość języków programowania: Python, R, Java, PLSQL")
-                            a.li(_t="tworzenie modeli regresji i klasyfikacji, również z uwzględnieniem koncepcji "
-                                "uczenia maszynowego")
-                            a.li(_t="znajomość technik weryfikacji modeli i testów statystycznych")
-                            a.li(_t="umiejętność przyswojenia i redakcji tekstów naukowych")
-                            a.li(_t="myślenie analityczne, z miejscem na kreatywność")
+                            a.li(_t="formation théorique en statistique, mathématique, finance")
+                            a.li(_t="programmation : mon langage préféré est Python")
+                            a.li(_t="développement de modèles d'apprentissage automatique, de réseaux neuronaux")
+                            a.li(_t="connaissance des techniques de vérification des modèles et des tests statistiques")
+                            a.li(_t="capacité à interpréter et à rédiger des textes scientifiques")
+                            a.li(_t="pensée analytique, mais aussi créativité")
                     with a.div(klass="exp-job"):
                         a.h2(_t="Exp&eacute;rience")
                         with a.ul(klass="exp-tiles"):
@@ -409,7 +392,7 @@ def generate_landing_page():
                 with a.div(klass="bio"):
                     with a.div(klass="bio-content", id="interests"):
                         a.h1(_t="Interests")
-                        a.p(_t="Heheh ksiazki")
+                        a.p(_t="J'aime le sport, je fais du roller, je pratique le step aerobics et parfois je choisis la gym. J'aime me promener, le plus souvent avec mes chiennes Rina et Ruby, c'est l'occasion de me détendre activement et de prendre contact avec la nature, ce qui est important pour moi. Je suis passionnée de lecture, bien que le temps manque toujours pour lire. Mes genres préférés sont la fiction, le reportage, la science populaire et le roman d'amour. Je mène un classement subjectif des livres que j'ai lus, en 2023, mes préférés étaient La physique de la mélancolie ( Guéorgui Gospodinov ) et Madame ( Antoni Libera ). Cette année, je participe à un défi de lecture - 40 livres - et je trace mes progrès sur <a href='https://www.goodreads.com/user/show/163587605-ola'>goodreads</a>.  ")
                     with a.div(klass="bio-photo"):
                         a.img(src="imgs/asfas.jpg")
                 with a.section(klass="projectBlog"):
