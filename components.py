@@ -32,8 +32,12 @@ def head(a, language, title, excerpt, permalink, img_url, icon_url, apple_icon_u
             a.script(src="https://kit.fontawesome.com/d7fb58415a.js", crossorigin="anonymous")
             # ICONS
             a("<!-- ICONS -->")
+            a.link(rel="icon", type="image/png", sizes="32x32", href="https://agrzelik.github.io/favicon-32x32.png")
+            a.link(rel="icon", type="image/png", sizes="16x16", href="https://agrzelik.github.io/favicon-16x16.png")
             a.link(rel="icon", href=icon_url)
-            a.link(rel="apple-touch-icon", href=apple_icon_url)
+            a.link(rel="apple-touch-icon",sizes="180x180", href="https://agrzelik.github.io/apple-touch-icon.png")
+            a.link(rel="manifest", href="https://agrzelik.github.io/site.webmanifest")
+            a.link(rel="mask-icon", href="https://agrzelik.github.io/safari-pinned-tab.svg", color="#5bbad5")
             # CANNONICAL
             a("<!-- CANNONICAL -->")
             a.link(rel="cannonical", href="https://agrzelik.github.io" + permalink)

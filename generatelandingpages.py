@@ -56,6 +56,14 @@ def generate_landing_page():
                         a.h2(_t="Edukacja")
                         with a.ul(klass="exp-tiles"):
                             with a.li():
+                                a.img(src="imgs/icons/ul-mi.png")
+                                with a.span():
+                                    a.h3(_t="Analiza danych")
+                                    a.small(_t="Wydział Matematyki i Informatyki")
+                                    a.small(_t="Uniwersytet Łódzki")
+                                    a.small(_t="studia licencjackie")
+                                    a.p(_t="<i class=\"fa-regular fa-calendar\"></i> 2022 - obecnie")
+                            with a.li():
                                 a.img(src="imgs/icons/ul-eksoc.jpg")
                                 with a.span():
                                     a.h3(_t="Ekonometria i analityka danych")
@@ -71,14 +79,6 @@ def generate_landing_page():
                                     a.small(_t="Uniwersytet Łódzki")
                                     a.small(_t="studia licencjackie")
                                     a.p(_t="<i class=\"fa-regular fa-calendar\"></i> 2019-2022")
-                            with a.li():
-                                a.img(src="imgs/icons/ul-mi.png")
-                                with a.span():
-                                    a.h3(_t="Analiza danych")
-                                    a.small(_t="Wydział Matematyki i Informatyki")
-                                    a.small(_t="Uniwersytet Łódzki")
-                                    a.small(_t="studia licencjackie")
-                                    a.p(_t="<i class=\"fa-regular fa-calendar\"></i> 2022 - obecnie")
                     with a.div(klass="exp-comp"):
                         a.h2(_t="Kompetencje")
                         with a.ul(klass="comps"):
@@ -92,18 +92,18 @@ def generate_landing_page():
                         a.h2(_t="Doświadczenie")
                         with a.ul(klass="exp-tiles"):
                             with a.li():
+                                a.img(src="imgs/icons/acc.png")
+                                with a.span():
+                                    a.h3(_t="Application Developement Associate ")
+                                    a.small(_t="Accenture Polska")
+                                    a.p(_t="<i class=\"fa-regular fa-calendar\"></i> wrzesień 2022 - obecnie")
+                            with a.li():
                                 a.img(src="imgs/asfas.png")
                                 with a.span():
                                     a.h3(_t="Praktyki zawodowe")
                                     a.small(_t="przygotowanie projektu teoretycznego dotyczącego optymalizacji reklam w Google Ads")
                                     a.small(_t="Evillage.pl")
                                     a.p(_t="<i class=\"fa-regular fa-calendar\"></i> 2021 lipiec - sierpień")
-                            with a.li():
-                                a.img(src="imgs/icons/acc.png")
-                                with a.span():
-                                    a.h3(_t="Application Developement Associate ")
-                                    a.small(_t="Accenture Polska")
-                                    a.p(_t="<i class=\"fa-regular fa-calendar\"></i> wrzesień 2022 - obecnie")
                     with a.div(klass="exp-jezyki"):
                         a.h2(_t="Języki")
                         with a.ul(klass="langs"):
@@ -143,10 +143,10 @@ def generate_landing_page():
                     a.h1(_t="Kontakt")
                     with a.div(klass="contact-wrap"):
                         with a.div(klass="contact-wrap-left"):
-                            with a.div(klass="contact-info"):
-                                with a.p():
-                                    a.i(klass="fa-regular fa-envelope")
-                                    a("&nbsp;ola.grzelik.bno@gmail.com")
+                            # with a.div(klass="contact-info"):
+                            #     with a.p():
+                            #         a.i(klass="fa-regular fa-envelope")
+                            #         a("&nbsp;ola.grzelik.bno@gmail.com")
                             with a.div(klass="contact-links"):
                                 with a.a(href="https://www.linkedin.com/in/aleksandra-grzelik-070291210?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app&fbclid=IwAR36g7HqOMaWRaIIc6dOUlOCUwKUVuVgH_zEZzSmF-seF1W-PBMWviSxEC0", target="_blank"):
                                     a.img(src="imgs/icons/linkedin.png")
@@ -195,6 +195,14 @@ def generate_landing_page():
                         a.h2(_t="Education")
                         with a.ul(klass="exp-tiles"):
                             with a.li():
+                                a.img(src="imgs/icons/ul-mi.png")
+                                with a.span():
+                                    a.h3(_t="Data analysis")
+                                    a.small(_t="Faculty of Mathematics and Computer Science")
+                                    a.small(_t="University of Lodz")
+                                    a.small(_t="master's degree")
+                                    a.p(_t="<i class=\"fa-regular fa-calendar\"></i> 2022 - obecnie")
+                            with a.li():
                                 a.img(src="imgs/icons/ul-eksoc.jpg")
                                 with a.span():
                                     a.h3(_t="Econometrics and data analysis")
@@ -210,14 +218,6 @@ def generate_landing_page():
                                     a.small(_t="University of Lodz")
                                     a.small(_t="bachelor's degree")
                                     a.p(_t="<i class=\"fa-regular fa-calendar\"></i> 2019-2022")
-                            with a.li():
-                                a.img(src="imgs/icons/ul-mi.png")
-                                with a.span():
-                                    a.h3(_t="Data analysis")
-                                    a.small(_t="Faculty of Mathematics and Computer Science")
-                                    a.small(_t="University of Lodz")
-                                    a.small(_t="master's degree")
-                                    a.p(_t="<i class=\"fa-regular fa-calendar\"></i> 2022 - obecnie")
                     with a.div(klass="exp-comp"):
                         a.h2(_t="Competences")
                         with a.ul(klass="comps"):
@@ -231,18 +231,18 @@ def generate_landing_page():
                         a.h2(_t="Experience")
                         with a.ul(klass="exp-tiles"):
                             with a.li():
+                                a.img(src="imgs/icons/acc.png")
+                                with a.span():
+                                    a.h3(_t="Application Developement Associate ")
+                                    a.small(_t="Accenture Polska")
+                                    a.p(_t="<i class=\"fa-regular fa-calendar\"></i> september 2022 - present")
+                            with a.li():
                                 a.img(src="imgs/asfas.png")
                                 with a.span():
                                     a.h3(_t="Internship")
                                     a.small(_t="Participating in Google Ads optimization project")
                                     a.small(_t="Evillage.pl")
                                     a.p(_t="<i class=\"fa-regular fa-calendar\"></i> 2021 july - august")
-                            with a.li():
-                                a.img(src="imgs/icons/acc.png")
-                                with a.span():
-                                    a.h3(_t="Application Developement Associate ")
-                                    a.small(_t="Accenture Polska")
-                                    a.p(_t="<i class=\"fa-regular fa-calendar\"></i> september 2022 - present")
                     with a.div(klass="exp-jezyki"):
                         a.h2(_t="Languages")
                         with a.ul(klass="langs"):
@@ -282,10 +282,10 @@ def generate_landing_page():
                     a.h1(_t="Contact")
                     with a.div(klass="contact-wrap"):
                         with a.div(klass="contact-wrap-left"):
-                            with a.div(klass="contact-info"):
-                                with a.p():
-                                    a.i(klass="fa-regular fa-envelope")
-                                    a("&nbsp;ola.grzelik.bno@gmail.com")
+                            # with a.div(klass="contact-info"):
+                            #     with a.p():
+                            #         a.i(klass="fa-regular fa-envelope")
+                            #         a("&nbsp;ola.grzelik.bno@gmail.com")
                             with a.div(klass="contact-links"):
                                 with a.a(href="https://www.linkedin.com/in/aleksandra-grzelik-070291210?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app&fbclid=IwAR36g7HqOMaWRaIIc6dOUlOCUwKUVuVgH_zEZzSmF-seF1W-PBMWviSxEC0", target="_blank"):
                                     a.img(src="imgs/icons/linkedin.png")
@@ -334,6 +334,14 @@ def generate_landing_page():
                         a.h2(_t="Education")
                         with a.ul(klass="exp-tiles"):
                             with a.li():
+                                a.img(src="imgs/icons/ul-mi.png")
+                                with a.span():
+                                    a.h3(_t="l'Analyse des donnes")
+                                    a.small(_t="Facult&eacute; de Mathematique et Informatique")
+                                    a.small(_t="Universit&eacute; de Lodz")
+                                    a.small(_t="ma&icirc;trise")
+                                    a.p(_t="<i class=\"fa-regular fa-calendar\"></i> 2022 - obecnie")
+                            with a.li():
                                 a.img(src="imgs/icons/ul-eksoc.jpg")
                                 with a.span():
                                     a.h3(_t="Econometrie et l'Analyse des donnes")
@@ -349,14 +357,6 @@ def generate_landing_page():
                                     a.small(_t="Universit&eacute; de Lodz")
                                     a.small(_t="licence")
                                     a.p(_t="<i class=\"fa-regular fa-calendar\"></i> 2019-2022")
-                            with a.li():
-                                a.img(src="imgs/icons/ul-mi.png")
-                                with a.span():
-                                    a.h3(_t="l'Analyse des donnes")
-                                    a.small(_t="Facult&eacute; de Mathematique et Informatique")
-                                    a.small(_t="Universit&eacute; de Lodz")
-                                    a.small(_t="ma&icirc;trise")
-                                    a.p(_t="<i class=\"fa-regular fa-calendar\"></i> 2022 - obecnie")
                     with a.div(klass="exp-comp"):
                         a.h2(_t="Competences")
                         with a.ul(klass="comps"):
@@ -370,18 +370,18 @@ def generate_landing_page():
                         a.h2(_t="Exp&eacute;rience")
                         with a.ul(klass="exp-tiles"):
                             with a.li():
-                                a.img(src="imgs/asfas.png")
-                                with a.span():
-                                    a.h3(_t="Stage")
-                                    a.small(_t="La Pr&eacute;paration du Projet th&eacute;oretique optimisation des Google Ads")
-                                    a.small(_t="Evillage.pl")
-                                    a.p(_t="<i class=\"fa-regular fa-calendar\"></i> 2021 julliet - ao&ucirc;t")
-                            with a.li():
                                 a.img(src="imgs/icons/acc.png")
                                 with a.span():
                                     a.h3(_t="Application Developement Associate ")
                                     a.small(_t="Accenture Polska")
                                     a.p(_t="<i class=\"fa-regular fa-calendar\"></i> septembre 2022 - pr&eacute;sent")
+                            with a.li():
+                                #a.img(src="imgs/asfas.png")
+                                with a.span():
+                                    a.h3(_t="Stage")
+                                    a.small(_t="La Pr&eacute;paration du Projet th&eacute;oretique optimisation des Google Ads")
+                                    a.small(_t="Evillage.pl")
+                                    a.p(_t="<i class=\"fa-regular fa-calendar\"></i> 2021 julliet - ao&ucirc;t")
                     with a.div(klass="exp-jezyki"):
                         a.h2(_t="Langues")
                         with a.ul(klass="langs"):
@@ -421,10 +421,10 @@ def generate_landing_page():
                     a.h1(_t="Contactez-moi")
                     with a.div(klass="contact-wrap"):
                         with a.div(klass="contact-wrap-left"):
-                            with a.div(klass="contact-info"):
-                                with a.p():
-                                    a.i(klass="fa-regular fa-envelope")
-                                    a("&nbsp;ola.grzelik.bno@gmail.com")
+                            # with a.div(klass="contact-info"):
+                            #     with a.p():
+                            #         a.i(klass="fa-regular fa-envelope")
+                            #         a("&nbsp;ola.grzelik.bno@gmail.com")
                             with a.div(klass="contact-links"):
                                 with a.a(href="https://www.linkedin.com/in/aleksandra-grzelik-070291210?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app&fbclid=IwAR36g7HqOMaWRaIIc6dOUlOCUwKUVuVgH_zEZzSmF-seF1W-PBMWviSxEC0", target="_blank"):
                                     a.img(src="imgs/icons/linkedin.png")
