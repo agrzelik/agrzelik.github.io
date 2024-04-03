@@ -2,9 +2,9 @@
 
 from airium import Airium
 
-
-
-base_url = "https://agrzelik.github.io/"
+# ZMIEN FONT AWESOME!!!
+base_url = "http://127.0.0.1:5500/" # debug
+# base_url = "https://agrzelik.github.io/" # production
 
 def head(a, language, title, excerpt, permalink, img_url, icon_url, apple_icon_url):
         with a.head():
@@ -29,15 +29,14 @@ def head(a, language, title, excerpt, permalink, img_url, icon_url, apple_icon_u
             if(permalink != "/" and permalink != "/eng.html" and permalink != "/fr.html"):
                 a.link(rel="stylesheet", href=base_url + "css/blog.css")
                 a.link(rel="stylesheet", href=base_url +"css/projects.css")
-            a.script(src="https://kit.fontawesome.com/d7fb58415a.js", crossorigin="anonymous")
+            #a.script(src="https://kit.fontawesome.com/d7fb58415a.js", crossorigin="anonymous")
             # ICONS
             a("<!-- ICONS -->")
-            a.link(rel="icon", type="image/png", sizes="32x32", href="https://agrzelik.github.io/favicon-32x32.png")
-            a.link(rel="icon", type="image/png", sizes="16x16", href="https://agrzelik.github.io/favicon-16x16.png")
-            a.link(rel="icon", href=icon_url)
-            a.link(rel="apple-touch-icon",sizes="180x180", href="https://agrzelik.github.io/apple-touch-icon.png")
-            a.link(rel="manifest", href="https://agrzelik.github.io/site.webmanifest")
-            a.link(rel="mask-icon", href="https://agrzelik.github.io/safari-pinned-tab.svg", color="#5bbad5")
+            a.link(rel="icon", type="image/png", sizes="32x32", href=base_url+"favicon-32x32.png")
+            a.link(rel="icon", type="image/png", sizes="16x16", href=base_url+"favicon-16x16.png")
+            a.link(rel="apple-touch-icon",sizes="180x180", href=base_url+"apple-touch-icon.png")
+            a.link(rel="manifest", href=base_url+"site.webmanifest")
+            a.link(rel="mask-icon", href=base_url+"safari-pinned-tab.svg", color="#5bbad5")
             # CANNONICAL
             a("<!-- CANNONICAL -->")
             a.link(rel="cannonical", href="https://agrzelik.github.io" + permalink)
@@ -153,17 +152,16 @@ def footer(a, language):
                     a("Design by:")
                     with a.a(href="https://matig152.github.io/"):
                         a("Mateusz Grzelik &#128279;")
-                        a.script(src=base_url+"js/main.js")
         elif(language == "fr"):
                 with a.p(): 
                     a("Le projet:")
                     with a.a(href="https://matig152.github.io/"):
                         a("Mateusz Grzelik &#128279;")
-                        a.script(src=base_url+"js/main.js")
         else:
                 with a.p(): 
                     a("Zaprojektowa&lstrok;:")
                     with a.a(href="https://matig152.github.io/"):
                         a("Mateusz Grzelik &#128279;")
-                        a.script(src=base_url+"js/main.js")
+    a.script(src=base_url+"js/main.js")
+    
         
