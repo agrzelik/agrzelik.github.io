@@ -29,7 +29,8 @@
     border-radius: 20px;
     box-shadow: 0px 0px 8px var(--onSecondary);
     display: grid;
-    height: 300px;
+    height: auto;
+    max-height: 400px;
     transition: all .1s;
     grid-template-columns: auto auto;
     text-decoration: none;
@@ -52,10 +53,11 @@
 }
 .postPreview .desc h3{
     font-size: 24px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .postPreview .desc p{
     padding-top: 50px;
+    padding-bottom: 20px;
 }
 
 /*#endregion*/
@@ -135,10 +137,12 @@
 
 
 .postContent{
+    padding-top: 30px;
     color: var(--primary)
 }
 .postContent img{
     max-width: 800px;
+    max-height: 100vh;
 }
 
 
@@ -244,7 +248,7 @@
         padding: 0;
     }
     .postPreview{
-        height: 400px;
+        max-height: 450px;
         grid-template-columns: auto;
     }
     .postPreview img{
@@ -257,7 +261,7 @@
     }
     .postPreview .desc{
         color: var(--primary);
-        padding: 5px 10px;
+        padding: 15px 15px;
     }
     .postPreview .desc h3{
         font-size: 20px;
@@ -265,6 +269,7 @@
     }
     .postPreview .desc p{
         padding-top: 5px;
+        padding-bottom: 0;
     }
 
 

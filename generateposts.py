@@ -60,7 +60,7 @@ def generate_post(post):
                 with a.article(klass="post"):
                     with a.header():
                         with a.h1(): a(pl_title)
-                        with a.h4(): a(date)
+                        with a.h4(klass="date"): a(date)
                         with a.div(klass="links"):
                             with a.div(klass="link", onclick="document.getElementById('share').style.display='block'"):
                                 with a.div(klass="linkIcon"):
@@ -71,9 +71,10 @@ def generate_post(post):
                                     a.img(src="../imgs/icons/cite.png")
                                 with a.p(): a("Cytuj")
                     with a.main():
-                        with a.figure(klass="postPhoto"):
-                            a.img(src="/../"+img_url)
-                            with a.figcaption(): a(pl_img_desc)
+                        if (img_url != ""):
+                            with a.figure(klass="postPhoto"):
+                                a.img(src="/../"+img_url)
+                                with a.figcaption(): a(pl_img_desc)
                         with a.section(klass="postContent"): a(pl_content)
 
                         if(len(sources) > 0):
@@ -144,7 +145,7 @@ def generate_post(post):
                 with a.article(klass="post"):
                     with a.header():
                         with a.h1(): a(eng_title)
-                        with a.h4(): a(date)
+                        with a.h4(klass="date"): a(date)
                         with a.div(klass="links"):
                             with a.div(klass="link", onclick="document.getElementById('share').style.display='block'"):
                                 with a.div(klass="linkIcon"):
@@ -155,9 +156,10 @@ def generate_post(post):
                                     a.img(src="../../imgs/icons/cite.png")
                                 with a.p(): a("Cite")
                     with a.main():
-                        with a.figure(klass="postPhoto"):
-                            a.img(src="/../"+img_url)
-                            with a.figcaption(): a(eng_img_desc)
+                        if (img_url != ""):
+                            with a.figure(klass="postPhoto"):
+                                a.img(src="/../"+img_url)
+                                with a.figcaption(): a(eng_img_desc)
                         with a.section(klass="postContent"): a(eng_content)
 
                         if(len(sources) > 0):
@@ -229,7 +231,7 @@ def generate_post(post):
                 with a.article(klass="post"):
                     with a.header():
                         with a.h1(): a(fr_title)
-                        with a.h4(): a(date)
+                        with a.h4(klass="date"): a(date)
                         with a.div(klass="links"):
                             with a.div(klass="link", onclick="document.getElementById('share').style.display='block'"):
                                 with a.div(klass="linkIcon"):
@@ -240,9 +242,10 @@ def generate_post(post):
                                     a.img(src="../../imgs/icons/cite.png")
                                 with a.p(): a("Citation")
                     with a.main():
-                        with a.figure(klass="postPhoto"):
-                            a.img(src="/../"+img_url)
-                            with a.figcaption(): a(fr_img_desc)
+                        if (img_url != ""):
+                            with a.figure(klass="postPhoto"):
+                                a.img(src="/../"+img_url)
+                                with a.figcaption(): a(fr_img_desc)
                         with a.section(klass="postContent"): a(fr_content)
 
                         if(len(sources) > 0):
@@ -301,9 +304,9 @@ def generate_post(post):
 def generate_blog_page():
     # VARIABLES
     site_title_pl = "Blog - Aleksandra Grzelik"
-    site_description_pl = "Blog - Aleksandra Grzelik"
+    site_description_pl = "Aleksandra Grzelik - blog naukowy. Ekonometria, Analiza danych, Statystyka matematyczna. Modelowanie matametyczne, machine learing."
     site_title_eng = "Blog - Aleksandra Grzelik"
-    site_description_eng = "Blog - Aleksandra Grzelik"
+    site_description_eng = "Aleksandra Grzelik - scientific blog. Econometrics, Data Science, Mathematical Statistics. Matematical modelling, machine learing."
     site_title_fr = "Blog - Aleksandra Grzelik"
     site_description_fr = "Blog - Aleksandra Grzelik"
     # HTML META DATA
@@ -323,7 +326,8 @@ def generate_blog_page():
                     a.h1(_t="Blog")
                     for post in posts:
                         with a.a(klass="postPreview", href="blog/"+post['permalink']+".html"):
-                            a.img(src=post['imgUrl'])
+                            if(post['imgUrl'] != ""):
+                                a.img(src=post['imgUrl'])
                             with a.div(klass="desc"):
                                 a.h3(_t=post['pl']['title'])
                                 a.small(_t=post['date'])
@@ -347,7 +351,8 @@ def generate_blog_page():
                     a.h1(_t="Blog")
                     for post in posts:
                         with a.a(klass="postPreview", href="blog/"+post['permalink']+".html"):
-                            a.img(src="../"+post['imgUrl'])
+                            if(post['imgUrl'] != ""):
+                                a.img(src="../"+post['imgUrl'])
                             with a.div(klass="desc"):
                                 a.h3(_t=post['eng']['title'])
                                 a.small(_t=post['date'])
@@ -371,7 +376,8 @@ def generate_blog_page():
                     a.h1(_t="Blog")
                     for post in posts:
                         with a.a(klass="postPreview", href="blog/"+post['permalink']+".html"):
-                            a.img(src="../"+post['imgUrl'])
+                            if(post['imgUrl'] != ""):
+                                a.img(src="../"+post['imgUrl'])
                             with a.div(klass="desc"):
                                 a.h3(_t=post['fr']['title'])
                                 a.small(_t=post['date'])

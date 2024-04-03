@@ -1,0 +1,60 @@
+[
+
+	{
+		"date": "10/2022 - 02/2023",
+		"img": "",
+		"permalink": "networking-in-applied-network-theory",
+		"pl": {
+			"title": "Networking in Applied Network Theory",
+			"excerpt": "W ramach udziału w wydarzeniu &quot;Networking in Applied Network Theory&quot;, pracowałam nad projektem dotyczącym zakażeń finansowych. Zakażenia finansowe odnoszą się do procesu, w którym kryzys finansowy lub niepowodzenie jednej instytucji finansowej może prowadzić do kaskadowego efektu, zagrażając stabilności całego systemu finansowego.",
+		"content": "<p> W ramach udziału w wydarzeniu &quot;Networking in Applied Network Theory&quot;, pracowałam nad projektem dotyczącym zakażeń finansowych. Głównym celem projektu było porównanie klasycznego podejścia do modelowania globalnego rynku finansowego z podejściem opartym na analizie sieci. Zakażenia finansowe odnoszą się do procesu, w którym kryzys finansowy lub niepowodzenie jednej instytucji finansowej może prowadzić do kaskadowego efektu, zagrażając stabilności całego systemu finansowego. Przez kilka miesięcy uczestniczyłam w mini kursach online, które stanowiły przygotowanie do projektu badawczego. Wspólnie z zespołem mieliśmy okazję zgłębić złożoność sieci globalnego rynku akcji. Projekt zakończył się warsztatami dotyczącymi modelowania sieciowego w Będlewie w lutym 2023 roku, gdzie wraz z zespołem prezentowałam referat “Financial contagions: classical versus network-based approach to predicting stock market crashes”, miałam też okazję dyskutować z ekspertami z dziedziny analizy sieci. Bardzo cieszę się z możliwości uczestnictwa w tym wydarzeniu, które nie tylko przyczyniło się do mojego rozwoju zawodowego, ale również otworzyło nowe perspektywy w mojej ścieżce badawczej. </p>"
+		},
+		"fr": {
+			"title": "Networking in Applied Network Theory",
+			"excerpt": "Dans le cadre de ma participation à l'événement Networking in Applied Network Theory, j'ai travaillé sur un projet concernant les contagions financières. Les contagions financières désignent le processus par lequel une crise financière ou la défaillance d'une institution financière peut entraîner un effet en cascade, menaçant la stabilité de l'ensemble du système financier.",
+		"content": "Dans le cadre de ma participation à l'événement &quot;Networking in Applied Network Theory&quot;, j'ai travaillé sur un projet concernant les contagions financières. L'objectif principal du projet était de comparer l'approche classique de la modélisation du marché financier international avec une approche basée sur l'analyse des réseaux. Les contagions financières désignent le processus par lequel une crise financière ou la défaillance d'une institution financière peut entraîner un effet en cascade, menaçant la stabilité de l'ensemble du système financier. Pendant quelques mois, j'ai participé à des mini-cours en ligne pour me préparer au projet de recherche. Avec les membres de l'équipe, nous avons eu l'occasion d'explorer la complexité du réseau mondial des marchés financiers. Le projet s'est terminé par un séminaire sur la modélisation des réseaux à Będlewo en février 2023, où, avec l'équipe, j'ai présenté l'exposé &quot;Financial contagions : classical versus network-based approach to predicting stock market crashes&quot; et j'ai aussi eu l'occasion de dialoguer avec des experts dans le domaine de l'analyse des réseaux. Je suis très heureuse d'avoir eu l'occasion de participer à cet événement, qui a non seulement contribué au développement de ma carrière, mais qui a également ouvert de nouvelles perspectives dans ma voie scientifique."
+		},
+		"eng": {
+			"title": "Networking in Applied Network Theory",
+			"excerpt": "As part of my participation in the &quot;Networking in Applied Network Theory&quot; event, I worked on a project on financial contagions. Financial contagions refer to the process by which a financial crisis or failure of one financial institution can lead to a cascading effect, threatening the stability of the entire financial system.",
+		"content": "As part of my participation in the event &quot;Networking in Applied Network Theory&quot;, I worked on a project on financial contagions. The main aim of the project was to compare the classical approach to modelling the global stock market with an approach based on network analysis. Financial contagions refer to the process by which a financial crisis or failure of one financial institution can lead to a cascading effect, threatening the stability of the entire financial system. For several months, I participated in online mini-courses as preparation for the research project. Together with the team, we had the opportunity to explore the complexity of the global stock market network. The project ended with a workshop on network modelling in Będlewo in February 2023, where along with the team I presented the talk 'Financial contagions: classical versus network-based approach to predicting stock market crashes' and I also had the opportunity to discuss with experts in the field of network analysis. I am very happy to have had the opportunity to participate in this event, which not only contributed to my career development, but also opened up new perspectives in my research path."
+		},
+		"links": [
+			{
+				"name_pl": "NANT - strona wydarzenia",
+				"name_eng": "NANT - website",
+				"name_fr": "NANT - site web",
+				"url": "https://nant.mimuw.edu.pl/"
+			}
+		]
+	},
+	{
+		"date": "03/2022 - 06/2022",
+		"img": "imgs/projects/datascience.jpg",
+		"permalink": "data-science-in-practice",
+		"pl": {
+			"title": "Data Science in Practice",
+			"excerpt": "W ramach projektu pracowałam nad klasyfikacją klientów pod kątem wniosków kredytowych. Wybrany model został szczegółowo objaśniony za pomocą technik SHAP, LIME i PDP. Nasza praca pozwoliła lepiej zrozumieć procesy decyzyjne w sektorze finansowym.",
+			"content": "<p>W projekcie &quot;Data Science in Practice&quot; uczestniczyłam w czasie studiów licencjackich na kierunku Ekonometria i Analityka Danych na Uniwersytecie Łódzkim, projekt był realizowany we współpracy z McKinsey oraz Uniwersytetem Warszawskim. Jego celem było zastosowanie technik uczenia maszynowego w praktyce biznesowej. Jako uczestniczka projektu, wraz z zespołem, pracowałam nad rozdziałem czwartym, skoncentrowanym na klasyfikacji klientów ze względu na predyspozycje do złożenia wniosku kredytowego. Praca miała na celu identyfikację kluczowych czynników wpływających na decyzję o złożeniu wniosku kredytowego. W czasie trwania projektu porównane zostały modele klasyfikacji, a dla najlepszego z nich przygotowano zestawienie kluczowych cech w oparciu o techniki objaśniania modeli typu blackbox. Do wyboru najistotniejszych zmiennych wykorzystano metody SHAP, LIME i PDP. Te techniki umożliwiły lepsze zrozumienie, jak poszczególne zmienne wpływają na wyniki klasyfikacji. To pozwoliło na wnioskowanie o procesach decyzyjnych klientów w sektorze finansów. Treść podsumowania projektu jest dostępna pod załączonym linkiem.</p>"
+		},
+		"fr": {
+			"title": "Data Science in Practice",
+			"excerpt": "Au cours du projet, j'ai travaillé sur la classification des clients en fonction de la demande de prêt. Le modèle sélectionné a été expliqué en détail à l'aide des techniques SHAP, LIME et PDP. Le travail effectué a permis de mieux comprendre les processus de prise de décision dans le secteur financier.",
+			"content": "J'ai participé au projet &quot;Data Science in Practice&quot; pendant ma licence en Économétrie et Analyse de Données à l'Université de Lodz, le projet a été réalisé en coopération avec McKinsey et l'Université de Varsovie. L’objectif du projet était d'appliquer les techniques d'apprentissage automatique à la pratique des affaires. Comme participante du projet, j'ai travaillé avec le groupe sur le chapitre quatre, centré sur la classification des clients en considérant leur prédisposition à faire une demande de prêt. L'étude visait à identifier les facteurs clés influençant la décision de soumettre une demande de prêt. Au cours du projet, les modèles de classification ont été comparés et le meilleur a été sélectionné. Un résumé des caractéristiques clés a ensuite été préparé à l'aide de techniques d'explication de modèles de type black box. Les méthodes SHAP, LIME et PDP ont été utilisées pour sélectionner les variables les plus importantes. Ces techniques ont permis de mieux comprendre comment les variables individuelles affectent les résultats de la classification. Cela a permis de tirer des conclusions sur les processus de prise de décision par les clients du secteur financier. Le résumé du projet est disponible sur le lien ci-joint."
+		},
+		"eng": {
+			"title": "Data Science in Practice",
+			"excerpt": "During the project, I worked on classifying clients based on credit application. The selected model was thoroughly explained using SHAP, LIME, and PDP techniques. Our work allowed for a better understanding of decision-making processes in the financial sector.",
+			"content": "I participated in the &quot;Data Science in Practice&quot; project during my BA in Econometrics and Data Analytics at the University of Lodz, the project was carried out in cooperation with McKinsey and the University of Warsaw. Its aim was to apply machine learning techniques to business practice. As a participant of the project, I worked with the group on chapter four, focused on the classification of customers due to their predisposition to make a loan application. The study aimed to identify the key factors influencing the decision to submit a loan application. During the project, the classification models were compared and the best one was selected. A summary of key features was then prepared using black box model explanation techniques. SHAP, LIME and PDP methods were used to select the most relevant variables. These techniques enabled a better understanding of how individual variables affect the classification results. This allowed to draw conclusions about customers' decision-making processes in the finance sector. I participated in the 'Data Science in Practice' project during my BA in Econometrics and Data Analytics at the University of Lodz, the project was carried out in cooperation with McKinsey and the University of Warsaw. Its aim was to apply machine learning techniques to business practice. As a participant of the project, I worked with the group on chapter four, focused on the classification of customers due to their predisposition to make a loan application. The study aimed to identify the key factors influencing the decision to submit a loan application. During the project, the classification models were compared and the best one was selected. A summary of key features was then prepared using black box model explanation techniques. SHAP, LIME and PDP methods were used to select the most relevant variables. These techniques enabled a better understanding of how individual variables affect the classification results. This allowed to draw conclusions about customers' decision-making processes in the finance sector. The content of the project summary is available at the link."
+		},
+		"links": [
+			{
+				"name_pl": "XAI Stories 3.0",
+				"name_eng": "XAI Stories 3.0",
+				"name_fr": "XAI Stories 3.0",
+				"url": "https://pbiecek.github.io/xai_stories_3/"
+			}
+		]
+	}
+	
+]

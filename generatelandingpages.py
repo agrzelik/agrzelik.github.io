@@ -14,9 +14,9 @@ with codecs.open('projects.json', 'r', 'utf8') as file:
 def generate_landing_page():
     # VARIABLES
     site_title_pl = "Aleksandra Grzelik - Portfolio"
-    site_description_pl = "Aleksandra Grzelik - Portfolio"
+    site_description_pl = "Aleksandra Grzelik - Portfolio Akademickie, umiejętności i kompetencje. Projekty naukowe, artykuły oraz publikacje. Blog."
     site_title_eng = "Aleksandra Grzelik - Portfolio"
-    site_description_eng = "Aleksandra Grzelik - Portfolio"
+    site_description_eng = "Aleksandra Grzelik - Academic Portfolio, skills and competences. Academic projects, articles and publications. Blog."
     site_title_fr = "Aleksandra Grzelik - Portfolio"
     site_description_fr = "Aleksandra Grzelik - Portfolio"
     # HTML META DATA
@@ -99,7 +99,7 @@ def generate_landing_page():
                                     a.small(_t="Accenture Polska")
                                     a.p(_t="<i class=\"fa-regular fa-calendar\"></i> wrzesień 2022 - obecnie")
                             with a.li():
-                                a.img(src=internship_icon)
+                                a.img(src=internship_icon, style="height:60px;width:60px;padding:0px 10px")
                                 with a.span():
                                     a.h3(_t="Praktyki zawodowe")
                                     a.small(_t="przygotowanie projektu teoretycznego dotyczącego optymalizacji reklam w Google Ads")
@@ -123,23 +123,30 @@ def generate_landing_page():
                         a.p(_t="Lubię sport, jeżdżę na rolkach, ćwiczę step aerobik, czasami wybieram ćwiczenia siłowe. Lubię spacerować, najczęściej z moimi pieskami Riną i Ruby, to dla mnie okazja do aktywnego wypoczynku i kontaktu z naturą, który jest dla mnie ważny. Pasjonuje mnie czytanie, chociaż ciągle brakuje mi na nie czasu. Najchętniej sięgam po literaturę piękną, reportaże, pozycje popularnonaukowe i romanse. Prowadzę subiektywny ranking przeczytanych pozycji, w 2023 roku moimi faworytami były “Fizyka Smutku” (Georgi Gospodinow) oraz “Madame” (Antoni Libera). W bieżącym roku uczestniczę w wyzwaniu czytelniczym - 40 książek, a moje postępy śledzę na <a href='https://www.goodreads.com/user/show/163587605-ola'>goodreads</a>.  ")
                     with a.div(klass="bio-photo"):
                         a.img(src=interests_img)
+            # PROJEKTY I BLOG
                 with a.section(klass="projectBlog"):
                     with a.article():
                         a.h1(_t="Projekty")
-                        with a.a(klass="project", href="projects/"+projects[-1]['permalink']+'.html'):
-                            a.img(src=projects[-1]['img'])
+                        with a.a(klass="project", href="projects/"+projects[0]['permalink']+'.html'):
+                            if(projects[0]['img'] != ""):
+                                a.img(src=projects[0]['img'])
                             with a.div():
-                                a.h3(_t=projects[-1]['pl']['title'])
-                                a.small(_t=projects[-1]['date'])
-                                a.p(_t=projects[-1]['pl']['excerpt'])
+                                a.h3(_t=projects[0]['pl']['title'])
+                                with a.small(klass="date"):
+                                    a.i(klass="fa-regular fa-calendar")
+                                    a(" "+projects[0]['date'])
+                                a.p(_t=projects[0]['pl']['excerpt'])
                     with a.article():
                         a.h1(_t="Blog")
-                        with a.a(klass="project", href="blog/"+posts[-1]['permalink']+'.html'):
-                            a.img(src=posts[-1]['imgUrl'])
+                        with a.a(klass="project", href="blog/"+posts[0]['permalink']+'.html'):
+                            if(posts[0]['imgUrl'] != ""):
+                                a.img(src=posts[0]['imgUrl'])
                             with a.div():
-                                a.h3(_t=posts[-1]['pl']['title'])
-                                a.small(_t=posts[-1]['date'])
-                                a.p(_t=posts[-1]['pl']['excerpt'])
+                                a.h3(_t=posts[0]['pl']['title'])
+                                with a.small(klass="date"):
+                                    a.i(klass="fa-regular fa-calendar")
+                                    a(" "+posts[0]['date'])
+                                a.p(_t=posts[0]['pl']['excerpt'])
                 with a.div(klass="contact"):
                     a.h1(_t="Kontakt")
                     with a.div(klass="contact-wrap"):
@@ -238,7 +245,7 @@ def generate_landing_page():
                                     a.small(_t="Accenture Polska")
                                     a.p(_t="<i class=\"fa-regular fa-calendar\"></i> september 2022 - present")
                             with a.li():
-                                a.img(src=internship_icon)
+                                a.img(src=internship_icon, style="height:60px;width:60px;padding:0px 10px")
                                 with a.span():
                                     a.h3(_t="Internship")
                                     a.small(_t="Participating in Google Ads optimization project")
@@ -265,20 +272,26 @@ def generate_landing_page():
                 with a.section(klass="projectBlog"):
                     with a.article():
                         a.h1(_t="Projects")
-                        with a.a(klass="project", href="eng/projects/"+projects[-1]['permalink']+'.html'):
-                            a.img(src=projects[-1]['img'])
+                        with a.a(klass="project", href="eng/projects/"+projects[0]['permalink']+'.html'):
+                            if(projects[0]['img'] != ""):
+                                a.img(src=projects[0]['img'])
                             with a.div():
-                                a.h3(_t=projects[-1]['eng']['title'])
-                                a.small(_t=projects[-1]['date'])
-                                a.p(_t=projects[-1]['eng']['excerpt'])
+                                a.h3(_t=projects[0]['eng']['title'])
+                                with a.small(klass="date"):
+                                    a.i(klass="fa-regular fa-calendar")
+                                    a(" "+projects[0]['date'])
+                                a.p(_t=projects[0]['eng']['excerpt'])
                     with a.article():
                         a.h1(_t="Blog")
-                        with a.a(klass="project", href="eng/blog/"+posts[-1]['permalink']+'.html'):
-                            a.img(src=posts[-1]['imgUrl'])
+                        with a.a(klass="project", href="eng/blog/"+posts[0]['permalink']+'.html'):
+                            if(posts[0]['imgUrl'] != ""):
+                                a.img(src=posts[0]['imgUrl'])
                             with a.div():
-                                a.h3(_t=posts[-1]['eng']['title'])
-                                a.small(_t=posts[-1]['date'])
-                                a.p(_t=posts[-1]['eng']['excerpt'])
+                                a.h3(_t=posts[0]['eng']['title'])
+                                with a.small(klass="date"):
+                                    a.i(klass="fa-regular fa-calendar")
+                                    a(" "+posts[0]['date'])
+                                a.p(_t=posts[0]['eng']['excerpt'])
                 with a.div(klass="contact"):
                     a.h1(_t="Contact")
                     with a.div(klass="contact-wrap"):
@@ -377,7 +390,7 @@ def generate_landing_page():
                                     a.small(_t="Accenture Polska")
                                     a.p(_t="<i class=\"fa-regular fa-calendar\"></i> septembre 2022 - pr&eacute;sent")
                             with a.li():
-                                a.img(src=internship_icon)
+                                a.img(src=internship_icon, style="height:60px;width:60px;padding:0px 10px")
                                 with a.span():
                                     a.h3(_t="Stage")
                                     a.small(_t="La Pr&eacute;paration du Projet th&eacute;oretique optimisation des Google Ads")
@@ -404,20 +417,26 @@ def generate_landing_page():
                 with a.section(klass="projectBlog"):
                     with a.article():
                         a.h1(_t="Projets")
-                        with a.a(klass="project", href="fr/projects/"+projects[-1]['permalink']+'.html'):
-                            a.img(src=projects[-1]['img'])
+                        with a.a(klass="project", href="fr/projects/"+projects[0]['permalink']+'.html'):
+                            if(projects[0]['img'] != ""):
+                                a.img(src=projects[0]['img'])
                             with a.div():
-                                a.h3(_t=projects[-1]['fr']['title'])
-                                a.small(_t=projects[-1]['date'])
-                                a.p(_t=projects[-1]['fr']['excerpt'])
+                                a.h3(_t=projects[0]['fr']['title'])
+                                with a.small(klass="date"):
+                                    a.i(klass="fa-regular fa-calendar")
+                                    a(" "+projects[0]['date'])
+                                a.p(_t=projects[0]['fr']['excerpt'])
                     with a.article():
                         a.h1(_t="Blog")
-                        with a.a(klass="project", href="fr/blog/"+posts[-1]['permalink']+'.html'):
-                            a.img(src=posts[-1]['imgUrl'])
+                        with a.a(klass="project", href="fr/blog/"+posts[0]['permalink']+'.html'):
+                            if(posts[0]['imgUrl'] != ""):
+                                a.img(src=posts[0]['imgUrl'])
                             with a.div():
-                                a.h3(_t=posts[-1]['fr']['title'])
-                                a.small(_t=posts[-1]['date'])
-                                a.p(_t=posts[-1]['fr']['excerpt'])
+                                a.h3(_t=posts[0]['fr']['title'])
+                                with a.small(klass="date"):
+                                    a.i(klass="fa-regular fa-calendar")
+                                    a(" "+posts[0]['date'])
+                                a.p(_t=posts[0]['fr']['excerpt'])
                 with a.div(klass="contact"):
                     a.h1(_t="Contactez-moi")
                     with a.div(klass="contact-wrap"):

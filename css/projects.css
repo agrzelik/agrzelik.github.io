@@ -65,8 +65,11 @@
     color: var(--primary);
 }
 .singleProject header{
-    display: grid;
-    grid-template-columns: auto auto;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    min-height: 220px;
 }
 .metaData h1{
     text-align: left;
@@ -78,7 +81,7 @@
 .metaData h4{
     padding: 0;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     font-weight: 100;
     text-align: left;
 }
@@ -86,15 +89,17 @@
     margin-bottom: 40px;
 }
 .metaData a{
-    padding: 5px;
+    padding: 10px 30px;
+    border: 1px solid grey;
+    border-radius: 10px;
     text-decoration: none;
     color: black;
-    display: block;
     transition: all .1s;
-    font-size: 24px;
+    font-size: 20px;
 }
 .metaData a:hover{
-
+    color: white;
+    background-color: black;
 }
 .metaData a i{
     margin-left: 2px;
@@ -104,8 +109,9 @@
 }
 .mainPhoto img{
     max-width: 700px;
-    max-height: 60vh;
+    max-height: 400px;
     border-radius: 20px;
+    box-shadow: 0px 0px 10px lightgrey;
 }
 
 .content{
@@ -140,7 +146,7 @@
         width: 100%;
     }
     .projectPreview .desc{
-        padding: 5px 10px;
+        padding: 15px 10px;
         padding-bottom: 20px;
     }
     .projectPreview h3{
@@ -164,7 +170,8 @@
         color: var(--primary);
     }
     .singleProject header{
-        grid-template-columns: auto;
+        flex-direction: column;
+        gap: 20px;
     }
     .metaData h1{
         text-align: center;
@@ -212,7 +219,7 @@
     
     .content{
         margin-top: 20px;
-        font-size: 18px;
+        font-size: 15px;
     }
     
 }

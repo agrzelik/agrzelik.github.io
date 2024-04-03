@@ -3,8 +3,8 @@
 from airium import Airium
 
 # ZMIEN FONT AWESOME!!!
-base_url = "http://127.0.0.1:5500/" # debug
-# base_url = "https://agrzelik.github.io/" # production
+#base_url = "http://127.0.0.1:5500/" # debug
+base_url = "https://agrzelik.github.io/" # production
 
 def head(a, language, title, excerpt, permalink, img_url, icon_url, apple_icon_url):
         with a.head():
@@ -29,7 +29,7 @@ def head(a, language, title, excerpt, permalink, img_url, icon_url, apple_icon_u
             if(permalink != "/" and permalink != "/eng.html" and permalink != "/fr.html"):
                 a.link(rel="stylesheet", href=base_url + "css/blog.css")
                 a.link(rel="stylesheet", href=base_url +"css/projects.css")
-            #a.script(src="https://kit.fontawesome.com/d7fb58415a.js", crossorigin="anonymous")
+            a.script(src="https://kit.fontawesome.com/d7fb58415a.js", crossorigin="anonymous")
             # ICONS
             a("<!-- ICONS -->")
             a.link(rel="icon", type="image/png", sizes="32x32", href=base_url+"favicon-32x32.png")

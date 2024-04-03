@@ -22,6 +22,7 @@ print("Succesfully created backup of json files.")
 directories_to_clear = ["blog/", "projects/", "eng/blog/", "eng/projects", "fr/blog", "fr/projects"]
 for dir in directories_to_clear:
     cleardir.clear_directory(dir)
+print("Directories cleared successfully!")
 
 # GENERATE LANDING PAGES
 generatelandingpages.populate_landing_pages()

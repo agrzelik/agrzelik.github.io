@@ -54,13 +54,13 @@ def generate_project(project):
                         with a.div(klass="metaData"):
                             a.h1(_t=pl_title)
                             a.h4(_t=date)
-                            a.p(_t=pl_excerpt)
                             if(len(links) > 0):
                                 for link in links:
                                     with a.a(_t=link['name_pl'], href=link['url'], target="_blank"):
                                         a.i(klass="fa-solid fa-arrow-up-right-from-square")
-                        with a.figure(klass="mainPhoto"):
-                            a.img(src="../"+img_url)
+                        if (img_url != ""):
+                            with a.figure(klass="mainPhoto"):
+                                a.img(src="../"+img_url)
                     with a.section(klass="content"): a(pl_content)
             # FOOTER
             components.footer(a, "pl")
@@ -82,13 +82,13 @@ def generate_project(project):
                         with a.div(klass="metaData"):
                             a.h1(_t=eng_title)
                             a.h4(_t=date)
-                            a.p(_t=eng_excerpt)
                             if(len(links) > 0):
                                 for link in links:
                                     with a.a(_t=link['name_eng'], href=link['url'], target="_blank"):
                                         a.i(klass="fa-solid fa-arrow-up-right-from-square")
-                        with a.figure(klass="mainPhoto"):
-                            a.img(src="../../"+img_url)
+                        if (img_url != ""):
+                            with a.figure(klass="mainPhoto"):
+                                a.img(src="../../"+img_url)
                     with a.section(klass="content"): a(eng_content)
             # FOOTER
             components.footer(a, "en")
@@ -110,13 +110,13 @@ def generate_project(project):
                         with a.div(klass="metaData"):
                             a.h1(_t=fr_title)
                             a.h4(_t=date)
-                            a.p(_t=fr_excerpt)
                             if(len(links) > 0):
                                 for link in links:
                                     with a.a(_t=link['name_fr'], href=link['url'], target="_blank"):
                                         a.i(klass="fa-solid fa-arrow-up-right-from-square")
-                        with a.figure(klass="mainPhoto"):
-                            a.img(src="../../"+img_url)
+                        if (img_url != ""):
+                            with a.figure(klass="mainPhoto"):
+                                a.img(src="../../"+img_url)
                     with a.section(klass="content"): a(fr_content)
             # FOOTER
             components.footer(a, "fr")
@@ -128,10 +128,10 @@ def generate_project(project):
 def generate_project_page():
     # VARIABLES
     site_title_pl = "Projekty - Aleksandra Grzelik"
-    site_description_pl = "Projekty - Aleksandra Grzelik"
-    site_title_eng = "Projekty - Aleksandra Grzelik"
-    site_description_eng = "Projekty - Aleksandra Grzelik"
-    site_title_fr = "Projekty - Aleksandra Grzelik"
+    site_description_pl = "Aleksandra Grzelik - projekty naukowe, akademickie, granty."
+    site_title_eng = "Projects - Aleksandra Grzelik"
+    site_description_eng = "Aleksandra Grzelik - scientific and academic projects, grants."
+    site_title_fr = "Projets - Aleksandra Grzelik"
     site_description_fr = "Projekty - Aleksandra Grzelik"
     # HTML META DATA
     icon_url = "/favicon.ico"
@@ -150,7 +150,8 @@ def generate_project_page():
                 with a.section(klass="projects"):
                     for project in projects:
                         with a.a(klass="projectPreview", href="/projects/"+project['permalink']+".html"):
-                            a.img(src=project['img'])
+                            if (project['img'] != ""):
+                                a.img(src=project['img'])
                             with a.div(klass="desc"):
                                 a.h3(_t=project['pl']['title'])
                                 a.small(_t=project['date'])
@@ -174,7 +175,8 @@ def generate_project_page():
                 with a.section(klass="projects"):
                     for project in projects:
                         with a.a(klass="projectPreview", href="/eng/projects/"+project['permalink']+".html"):
-                            a.img(src="../"+project['img'])
+                            if (project['img'] != ""):
+                                a.img(src="../"+project['img'])
                             with a.div(klass="desc"):
                                 a.h3(_t=project['eng']['title'])
                                 a.small(_t=project['date'])
@@ -198,7 +200,8 @@ def generate_project_page():
                 with a.section(klass="projects"):
                     for project in projects:
                         with a.a(klass="projectPreview", href="/fr/projects/"+project['permalink']+".html"):
-                            a.img(src="../"+project['img'])
+                            if (project['img'] != ""):
+                                a.img(src="../"+project['img'])
                             with a.div(klass="desc"):
                                 a.h3(_t=project['fr']['title'])
                                 a.small(_t=project['date'])

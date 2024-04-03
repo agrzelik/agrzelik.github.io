@@ -7,5 +7,4 @@ def clear_directory(directory):
             file_path = os.path.join(directory, filename)
             if os.path.isfile(file_path):
                 os.unlink(file_path)
-        print("Directory cleared successfully!")
     
