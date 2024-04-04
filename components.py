@@ -2,7 +2,6 @@
 
 from airium import Airium
 
-# ZMIEN FONT AWESOME!!!
 #base_url = "http://127.0.0.1:5500/" # debug
 base_url = "https://agrzelik.github.io/" # production
 
