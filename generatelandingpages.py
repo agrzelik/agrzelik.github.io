@@ -350,15 +350,15 @@ def generate_landing_page():
                             with a.li():
                                 a.img(src="imgs/icons/ul-mi.png")
                                 with a.span():
-                                    a.h3(_t="l'Analyse des donnes")
+                                    a.h3(_t="l'Analyse des Donnes")
                                     a.small(_t="Facult&eacute; de Mathematique et Informatique")
                                     a.small(_t="Universit&eacute; de Lodz")
                                     a.small(_t="ma&icirc;trise")
-                                    a.p(_t="<i class=\"fa-regular fa-calendar\"></i> 2022 - obecnie")
+                                    a.p(_t="<i class=\"fa-regular fa-calendar\"></i> 2022 - pr&eacute;sent")
                             with a.li():
                                 a.img(src="imgs/icons/ul-eksoc.jpg")
                                 with a.span():
-                                    a.h3(_t="Econometrie et l'Analyse des donnes")
+                                    a.h3(_t="Économétrie et Analyse des Données")
                                     a.small(_t="Facult&eacute; de Economie et Sociologie")
                                     a.small(_t="Universit&eacute; de Lodz")
                                     a.small(_t="licence")
