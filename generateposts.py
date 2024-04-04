@@ -160,7 +160,13 @@ def generate_post(post):
                             with a.figure(klass="postPhoto"):
                                 a.img(src="/../"+img_url)
                                 with a.figcaption(): a(eng_img_desc)
-                        with a.section(klass="postContent"): a(eng_content)
+                        if (eng_content == ""):
+                            with a.section(klass="postContent"):
+                                with a.div(klass="hourglassWrapper"):
+                                    a.img(src="https://agrzelik.github.io/imgs/icons/hourglass.png")
+                                    a.h3(_t="Coming soon")
+                        else:
+                            with a.section(klass="postContent"): a(eng_content)
 
                         if(len(sources) > 0):
                             with a.section(class_="sources"):  # ŻRÓDŁA
@@ -246,7 +252,14 @@ def generate_post(post):
                             with a.figure(klass="postPhoto"):
                                 a.img(src="/../"+img_url)
                                 with a.figcaption(): a(fr_img_desc)
-                        with a.section(klass="postContent"): a(fr_content)
+                        if (fr_content == ""):
+                            with a.section(klass="postContent"):
+                                with a.div(klass="hourglassWrapper"):
+                                    a.img(src="https://agrzelik.github.io/imgs/icons/hourglass.png")
+                                    a.h3(_t="&aacute; venir")
+                        else:
+                            with a.section(klass="postContent"): a(fr_content)
+
 
                         if(len(sources) > 0):
                             with a.section(class_="sources"):  # ŻRÓDŁA

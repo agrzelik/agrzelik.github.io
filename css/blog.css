@@ -84,7 +84,25 @@
     font-weight: 100;
     margin-bottom: 10px;
 }
+/*COMING SOON*/
+.hourglassWrapper{
+    padding: 50px;
+    width: 100%;
+    display: grid;
+    place-content:center;
 
+}
+.hourglassWrapper img{
+    width: 150px;
+    margin: auto;
+}
+.hourglassWrapper h3{
+    text-align:center;
+    color:grey;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:14px
+}
 
 
 .links{
