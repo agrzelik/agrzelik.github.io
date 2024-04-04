@@ -235,6 +235,7 @@
     background-color: white;
     padding: 20px;
     color: var(--primary);
+    overflow-y: scroll;
 }
 .close{
     display: flex;
