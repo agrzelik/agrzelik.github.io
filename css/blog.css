@@ -86,14 +86,14 @@
 }
 /*COMING SOON*/
 .hourglassWrapper{
-    padding: 50px;
-    width: 100%;
+    filter: brightness(1.2);
+    padding: 100px 0;
     display: grid;
     place-content:center;
 
 }
 .hourglassWrapper img{
-    width: 150px;
+    width: 165px;
     margin: auto;
 }
 .hourglassWrapper h3{
