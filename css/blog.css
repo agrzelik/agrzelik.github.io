@@ -209,6 +209,7 @@
     background-color: white;
     padding: 20px;
     color: black;
+    overflow-y: scroll;
 }
 #share .box p{
     font-size: 14px;
